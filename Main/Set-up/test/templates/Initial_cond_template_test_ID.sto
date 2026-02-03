@@ -1,0 +1,8 @@
+model_states
+version=1
+nRows=8119
+nColumns=7
+inDegrees=no
+endheader
+time	rot_coord_0
+     

@@ -1,0 +1,8 @@
+testing_test.sto									
+version=1
+nRows=1									
+nColumns=7
+inDegrees=no
+endheader
+time	/jointset/pin/rot_coord_0/value	/jointset/pin/rot_coord_0/speed	/forceset/muscle1/activation	/forceset/muscle1/fiber_length	/forceset/muscle2/activation	/forceset/muscle2/fiber_length
+      0.02999999999999999889	      0.52359877559829892668	     -0.00000000000000925186	      0.01999999999999999348	      0.45356131713297775931	      0.5444592017200104	      0.19051027861023531185

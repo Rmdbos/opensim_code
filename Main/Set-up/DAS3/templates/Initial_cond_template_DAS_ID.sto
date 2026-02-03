@@ -1,0 +1,7 @@
+DAS3_states
+version=1
+nRows=4032
+nColumns=299
+inDegrees=no
+endheader
+time	SC_y	SC_z	SC_x	AC_y	AC_z	AC_x	GH_y	GH_z	GH_yy	EL_x	PS_y

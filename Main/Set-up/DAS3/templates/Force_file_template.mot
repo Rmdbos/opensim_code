@@ -1,0 +1,7 @@
+ToyLandingModel_force.mot									
+version=1									
+nRows=801									
+nColumns=10									
+inDegrees=yes									
+endheader									
+time	force_vx	force_vy	force_vz	force_px	force_py	force_pz	torque_x	torque_y	torque_z

@@ -1,0 +1,9 @@
+controls
+version=1
+nRows=2
+nColumns=3
+inDegrees=no
+endheader
+time	muscle1	muscle2
+      0.03000000	      0.02000000	      0.51059676
+      9.99000000	      0.02000000	      0.54085543

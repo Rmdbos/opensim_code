@@ -1,0 +1,26 @@
+ActuatorPowers
+version=1
+nRows=3
+nColumns=9
+inDegrees=no
+
+This file contains either the forces, speeds, or powers developed
+by the actuators of a model during a simulation.
+
+An actuator force is a generalized force, meaning that it can be either a force (N) or a torque (Nm).
+
+An actuator speed is the rate at which an actuator shortens. Depending on the actuator,
+a speed can be either a translational speed (m/s) or an angular speed (deg/s or rad/s).
+
+An actuator power (Watts) is the rate at which an actuator does work.  Positive power means
+that the actuator is delivering energy to the model; negative power means that the actuator
+is absorbing energy from the model.
+
+Units are S.I. units (second, meters, Newtons, ...)
+If the header above contains a line with 'inDegrees', this indicates whether rotational values are in degrees (yes) or radians (no).
+
+endheader
+time	SC_y_reserve	SC_z_reserve	SC_x_reserve	arm_flex_r_reserve	arm_add_r_reserve	arm_rot_r_reserve	elbow_flex_r_reserve	pro_sup_r_reserve
+      0.02999999999999999889	      0.00000000000000000000	      0.00000000000000000000	      0.00000000000000000000	      0.00000000000000000000	     -0.00000000000007719395	     -0.00000000000000000000	     -0.00000000000127801909	      0.00000000000000000000
+      0.04000000000000000083	     -0.00000000000000000000	      0.00000000000000000000	     -0.00000000000000000000	      0.00000001593866776208	      0.00000000563145874754	      0.00000000422975483428	     -0.00000002720352095186	      0.00000000000000000000
+      0.04999999999999999584	      0.00000000000000000000	      0.00000000000000000000	     -0.00000000000000000000	      0.00000003179612964459	      0.00000001121658194718	      0.00000000848343803470	     -0.00000005433619369625	     -0.00000000000000000000

@@ -1,0 +1,9 @@
+Inverse Dynamics Generalized Forces
+version=1
+nRows=2
+nColumns=2
+inDegrees=no
+endheader
+time	rot_coord_0_moment
+      0.00000000	     -0.14986819
+      0.01000000	     -0.14986819

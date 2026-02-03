@@ -1,0 +1,9 @@
+Inverse Dynamics Generalized Forces
+version=1
+nRows=2
+nColumns=12
+inDegrees=no
+endheader
+time	SC_y_moment	SC_z_moment	SC_x_moment	AC_y_moment	AC_z_moment	AC_x_moment	GH_y_moment	GH_z_moment	GH_yy_moment	EL_x_moment	PS_y_moment
+      0.00000000	      0.04030803	      9.71499879	      4.99708315	     -0.07907799	      4.86474219	      3.64288874	     -0.28675200	      4.54508894	     -0.29278147	      1.07095843	     -0.12739142
+      0.01000000	      0.04030803	      9.71499879	      4.99708315	     -0.07907799	      4.86474219	      3.64288874	     -0.28675200	      4.54508894	     -0.29278147	      1.07095843	     -0.12739142

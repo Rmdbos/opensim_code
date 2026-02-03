@@ -1,0 +1,8 @@
+model_states
+version=1
+nRows=8119
+nColumns=7
+inDegrees=no
+endheader
+time	/jointset/pin/rot_coord_0/value	/jointset/pin/rot_coord_0/speed
+     

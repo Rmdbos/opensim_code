@@ -1,0 +1,8 @@
+Subject-test_states
+version=1
+nRows=10233
+nColumns=1055
+inDegrees=no
+endheader
+time  /jointset/sc1/SC_y/value	/jointset/sc1/SC_y/speed	/jointset/sc2/SC_x/value	/jointset/sc2/SC_x/speed	/jointset/sc3/SC_z/value	/jointset/sc3/SC_z/speed      /jointset/acromial_r/arm_flex_r/value	/jointset/acromial_r/arm_flex_r/speed	/jointset/acromial_r/arm_add_r/value	/jointset/acromial_r/arm_add_r/speed	/jointset/acromial_r/arm_rot_r/value	/jointset/acromial_r/arm_rot_r/speed	/jointset/elbow_r/elbow_flex_r/value	/jointset/elbow_r/elbow_flex_r/speed	/jointset/radioulnar_r/pro_sup_r/value	/jointset/radioulnar_r/pro_sup_r/speed
+ 

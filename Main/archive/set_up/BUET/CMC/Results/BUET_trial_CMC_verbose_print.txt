@@ -1,0 +1,879 @@
+Loaded model BUET_simplified from file C:\Users\bos_ro\Documents\opensim_code\Main\Set-up\BUET\BUET_simplified.osim
+Running tool 'BUET_simplified_CMCed'.
+No external loads will be applied (external loads file not specified).
+TaskSet size = 4.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'delt_scap_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'delt_scap_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'delt_scap_3' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'delt_scap_4' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'delt_scap_5' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'delt_scap_6' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'delt_scap_7' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'delt_scap_8' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'delt_scap_9' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'delt_scap10' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'delt_scap11' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'delt_clav_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'delt_clav_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'delt_clav_3' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'delt_clav_4' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'tric_long_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'tric_long_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'tric_long_3' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'tric_long_4' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'tric_med_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'tric_med_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'tric_med_3' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'tric_med_4' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'tric_med_5' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'tric_lat_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'tric_lat_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'tric_lat_3' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'tric_lat_4' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'tric_lat_5' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'bic_s' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'coracobr_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'coracobr_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'coracobr_3' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'brachialis_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'brachialis_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'brachialis_3' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'brachialis_4' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'brachialis_5' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'brachialis_6' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'brachialis_7' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'brachiorad_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'brachiorad_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'brachiorad_3' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'pron_teres_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'pron_teres_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'pron_quad_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'pron_quad_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'pron_quad_3' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'anconeus_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'anconeus_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'anconeus_3' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'anconeus_4' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'anconeus_5' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'supinator_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'supinator_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'supinator_3' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'supinator_4' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'supinator_5' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'trap_scap_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'trap_scap_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'trap_scap_3' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'trap_scap_4' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'trap_scap_5' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'trap_scap_6' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'trap_scap_7' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'trap_scap_8' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'trap_scap_9' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'trap_scap10' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'trap_scap11' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'ter_min_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'ter_min_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'ter_min_3' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'ter_maj_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'ter_maj_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'ter_maj_3' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'ter_maj_4' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'supra_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'supra_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'supra_3' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'supra_4' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'infra_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'infra_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'infra_3' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'infra_4' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'infra_5' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'infra_6' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'rhomboid_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'rhomboid_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'rhomboid_3' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'rhomboid_4' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'rhomboid_5' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'lev_scap_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'lev_scap_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'subscap_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'subscap_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'subscap_3' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'subscap_4' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'subscap_5' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'subscap_6' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'subscap_7' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'subscap_8' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'subscap_9' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'subscap10' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'subscap11' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'pect_min_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'pect_min_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'pect_min_3' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'pect_min_4' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'pect_maj_t_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'pect_maj_t_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'pect_maj_t_3' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'pect_maj_t_4' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'pect_maj_t_5' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'pect_maj_t_6' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'pect_maj_c_1' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'pect_maj_c_2' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'LD_L1_r' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'LD_L2_r' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'LD_L3_r' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'LD_L4_r' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'LD_L5_r' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'LD_T12_r' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'LD_T11_r' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'LD_T10_r' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'LD_T9_r' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'LD_T8_r' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'LD_T7_r' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'LD_R12_r' has been reset to 0.02.
+CMC::extendAddToSystem: CMC cannot compute controls for muscles with muscle controls less than 0.02.
+CMC::extendAddToSystem: The minimum control limit for muscle 'LD_R11_r' has been reset to 0.02.
+A desired points file was not specified.
+Loading desired kinematics from file 'C:\Users\bos_ro\Documents\opensim_code\Main\Set-up\BUET\CMC\..\Stationary_kinematics\BUET_static_kinematics_GH_y_0.0_arm_add_-10.0_elbow_90.0.mot'...
+Storage: read data file = C:\Users\bos_ro\Documents\opensim_code\Main\Set-up\BUET\CMC\..\Stationary_kinematics\BUET_static_kinematics_GH_y_0.0_arm_add_-10.0_elbow_90.0.mot (nr=1001 nc=17)
+Not filtering the desired kinematics.
+MODEL: BUET_simplified
+
+numStates = 274
+numCoordinates = 8
+numSpeeds = 8
+numActuators = 129
+numBodies = 18
+numConstraints = 0
+numProbes = 0
+
+ANALYSES (total: 2)
+analysis[0] = Un-named analysis.
+analysis[1] = Un-named analysis.
+
+BODIES (total: 18)
+body[0] = sacrum. mass: 0
+              moments of inertia:  ~[0,0,0]
+              products of inertia: ~[0,0,0]
+body[1] = lumbar5. mass: 1.824
+              moments of inertia:  ~[0.178216,0.0217274,0.171486]
+              products of inertia: ~[0,0,0]
+body[2] = lumbar4. mass: 1.799
+              moments of inertia:  ~[0.171208,0.0206792,0.165178]
+              products of inertia: ~[0,0,0]
+body[3] = lumbar3. mass: 1.67
+              moments of inertia:  ~[0.157697,0.0199107,0.152447]
+              products of inertia: ~[0,0,0]
+body[4] = lumbar2. mass: 1.689
+              moments of inertia:  ~[0.162705,0.0219751,0.157705]
+              products of inertia: ~[0,0,0]
+body[5] = lumbar1. mass: 1.677
+              moments of inertia:  ~[0.162657,0.0241312,0.157927]
+              products of inertia: ~[0,0,0]
+body[6] = torso. mass: 16.7849
+              moments of inertia:  ~[1.19239,0.513346,1.1632]
+              products of inertia: ~[0,0,0]
+body[7] = LB_wrap. mass: 0.001
+              moments of inertia:  ~[6.85833e-06,6.85833e-06,2.45e-06]
+              products of inertia: ~[0,0,0]
+body[8] = clavicle_1. mass: 0
+              moments of inertia:  ~[0,0,0]
+              products of inertia: ~[0,0,0]
+body[9] = clavicle_2. mass: 0
+              moments of inertia:  ~[0,0,0]
+              products of inertia: ~[0,0,0]
+body[10] = clavicle_r. mass: 0.189773
+              moments of inertia:  ~[0.000267674,0.000267674,4.90132e-05]
+              products of inertia: ~[-2.09426e-05,-7.71723e-05,5.92606e-05]
+body[11] = scapula_1. mass: 0
+              moments of inertia:  ~[0,0,0]
+              products of inertia: ~[0,0,0]
+body[12] = scapula_2. mass: 0
+              moments of inertia:  ~[0,0,0]
+              products of inertia: ~[0,0,0]
+body[13] = scapula_r. mass: 0.501599
+              moments of inertia:  ~[0.000885669,0.00081934,0.000885669]
+              products of inertia: ~[0.0003202,0.000291543,0.000171793]
+body[14] = humerus_r. mass: 2.0325
+              moments of inertia:  ~[0.011946,0.004121,0.013409]
+              products of inertia: ~[0,0,0]
+body[15] = ulna_r. mass: 0.6075
+              moments of inertia:  ~[0.002962,0.000618,0.003213]
+              products of inertia: ~[0,0,0]
+body[16] = radius_r. mass: 0.6075
+              moments of inertia:  ~[0.002962,0.000618,0.003213]
+              products of inertia: ~[0,0,0]
+body[17] = hand_r. mass: 0.4575
+              moments of inertia:  ~[0.000892,0.000547,0.00134]
+              products of inertia: ~[0,0,0]
+
+JOINTS (total: 18)
+joint[0] = ground_torso. parent: ground_offset, child: torso_offset
+joint[1] = L5_S1_IVDjnt. parent: sacrum_offset, child: lumbar5_offset
+joint[2] = L4_L5_IVDjnt. parent: lumbar5_offset, child: lumbar4_offset
+joint[3] = L3_L4_IVDjnt. parent: lumbar4_offset, child: lumbar3_offset
+joint[4] = L2_L3_IVD_jnt. parent: lumbar3_offset, child: lumbar2_offset
+joint[5] = L1_L2_IVD_jnt. parent: lumbar2_offset, child: lumbar1_offset
+joint[6] = Torsojnt. parent: lumbar1_offset, child: torso_offset
+joint[7] = LB_wrapjnt. parent: sacrum_offset, child: LB_wrap_offset
+joint[8] = sc1. parent: torso_offset, child: clavicle_1_offset
+joint[9] = sc2. parent: clavicle_1_offset, child: clavicle_2_offset
+joint[10] = sc3. parent: clavicle_2_offset, child: clavicle_r_offset
+joint[11] = AC1. parent: clavicle_r_offset, child: scapula_1_offset
+joint[12] = AC2. parent: scapula_1_offset, child: scapula_2_offset
+joint[13] = AC3. parent: scapula_2_offset, child: scapula_r_offset
+joint[14] = acromial_r. parent: scapula_r_offset, child: humerus_r_offset
+joint[15] = elbow_r. parent: humerus_r_offset, child: ulna_r_offset
+joint[16] = radioulnar_r. parent: ulna_r_offset, child: radius_r_offset
+joint[17] = radius_hand_r. parent: radius_r_offset, child: hand_r_offset
+
+ACTUATORS (total: 129)
+actuator[0] = delt_scap_1
+actuator[1] = delt_scap_2
+actuator[2] = delt_scap_3
+actuator[3] = delt_scap_4
+actuator[4] = delt_scap_5
+actuator[5] = delt_scap_6
+actuator[6] = delt_scap_7
+actuator[7] = delt_scap_8
+actuator[8] = delt_scap_9
+actuator[9] = delt_scap10
+actuator[10] = delt_scap11
+actuator[11] = delt_clav_1
+actuator[12] = delt_clav_2
+actuator[13] = delt_clav_3
+actuator[14] = delt_clav_4
+actuator[15] = tric_long_1
+actuator[16] = tric_long_2
+actuator[17] = tric_long_3
+actuator[18] = tric_long_4
+actuator[19] = tric_med_1
+actuator[20] = tric_med_2
+actuator[21] = tric_med_3
+actuator[22] = tric_med_4
+actuator[23] = tric_med_5
+actuator[24] = tric_lat_1
+actuator[25] = tric_lat_2
+actuator[26] = tric_lat_3
+actuator[27] = tric_lat_4
+actuator[28] = tric_lat_5
+actuator[29] = bic_s
+actuator[30] = coracobr_1
+actuator[31] = coracobr_2
+actuator[32] = coracobr_3
+actuator[33] = brachialis_1
+actuator[34] = brachialis_2
+actuator[35] = brachialis_3
+actuator[36] = brachialis_4
+actuator[37] = brachialis_5
+actuator[38] = brachialis_6
+actuator[39] = brachialis_7
+actuator[40] = brachiorad_1
+actuator[41] = brachiorad_2
+actuator[42] = brachiorad_3
+actuator[43] = pron_teres_1
+actuator[44] = pron_teres_2
+actuator[45] = pron_quad_1
+actuator[46] = pron_quad_2
+actuator[47] = pron_quad_3
+actuator[48] = anconeus_1
+actuator[49] = anconeus_2
+actuator[50] = anconeus_3
+actuator[51] = anconeus_4
+actuator[52] = anconeus_5
+actuator[53] = supinator_1
+actuator[54] = supinator_2
+actuator[55] = supinator_3
+actuator[56] = supinator_4
+actuator[57] = supinator_5
+actuator[58] = trap_scap_1
+actuator[59] = trap_scap_2
+actuator[60] = trap_scap_3
+actuator[61] = trap_scap_4
+actuator[62] = trap_scap_5
+actuator[63] = trap_scap_6
+actuator[64] = trap_scap_7
+actuator[65] = trap_scap_8
+actuator[66] = trap_scap_9
+actuator[67] = trap_scap10
+actuator[68] = trap_scap11
+actuator[69] = ter_min_1
+actuator[70] = ter_min_2
+actuator[71] = ter_min_3
+actuator[72] = ter_maj_1
+actuator[73] = ter_maj_2
+actuator[74] = ter_maj_3
+actuator[75] = ter_maj_4
+actuator[76] = supra_1
+actuator[77] = supra_2
+actuator[78] = supra_3
+actuator[79] = supra_4
+actuator[80] = infra_1
+actuator[81] = infra_2
+actuator[82] = infra_3
+actuator[83] = infra_4
+actuator[84] = infra_5
+actuator[85] = infra_6
+actuator[86] = rhomboid_1
+actuator[87] = rhomboid_2
+actuator[88] = rhomboid_3
+actuator[89] = rhomboid_4
+actuator[90] = rhomboid_5
+actuator[91] = lev_scap_1
+actuator[92] = lev_scap_2
+actuator[93] = subscap_1
+actuator[94] = subscap_2
+actuator[95] = subscap_3
+actuator[96] = subscap_4
+actuator[97] = subscap_5
+actuator[98] = subscap_6
+actuator[99] = subscap_7
+actuator[100] = subscap_8
+actuator[101] = subscap_9
+actuator[102] = subscap10
+actuator[103] = subscap11
+actuator[104] = pect_min_1
+actuator[105] = pect_min_2
+actuator[106] = pect_min_3
+actuator[107] = pect_min_4
+actuator[108] = pect_maj_t_1
+actuator[109] = pect_maj_t_2
+actuator[110] = pect_maj_t_3
+actuator[111] = pect_maj_t_4
+actuator[112] = pect_maj_t_5
+actuator[113] = pect_maj_t_6
+actuator[114] = pect_maj_c_1
+actuator[115] = pect_maj_c_2
+actuator[116] = LD_L1_r
+actuator[117] = LD_L2_r
+actuator[118] = LD_L3_r
+actuator[119] = LD_L4_r
+actuator[120] = LD_L5_r
+actuator[121] = LD_T12_r
+actuator[122] = LD_T11_r
+actuator[123] = LD_T10_r
+actuator[124] = LD_T9_r
+actuator[125] = LD_T8_r
+actuator[126] = LD_T7_r
+actuator[127] = LD_R12_r
+actuator[128] = LD_R11_r
+
+STATES (total: 274)
+y[0] = /jointset/sc1/SC_y/value
+y[1] = /jointset/sc1/SC_y/speed
+y[2] = /jointset/sc2/SC_x/value
+y[3] = /jointset/sc2/SC_x/speed
+y[4] = /jointset/sc3/SC_z/value
+y[5] = /jointset/sc3/SC_z/speed
+y[6] = /jointset/acromial_r/arm_flex_r/value
+y[7] = /jointset/acromial_r/arm_flex_r/speed
+y[8] = /jointset/acromial_r/arm_add_r/value
+y[9] = /jointset/acromial_r/arm_add_r/speed
+y[10] = /jointset/acromial_r/arm_rot_r/value
+y[11] = /jointset/acromial_r/arm_rot_r/speed
+y[12] = /jointset/elbow_r/elbow_flex_r/value
+y[13] = /jointset/elbow_r/elbow_flex_r/speed
+y[14] = /jointset/radioulnar_r/pro_sup_r/value
+y[15] = /jointset/radioulnar_r/pro_sup_r/speed
+y[16] = /forceset/delt_scap_1/activation
+y[17] = /forceset/delt_scap_1/fiber_length
+y[18] = /forceset/delt_scap_2/activation
+y[19] = /forceset/delt_scap_2/fiber_length
+y[20] = /forceset/delt_scap_3/activation
+y[21] = /forceset/delt_scap_3/fiber_length
+y[22] = /forceset/delt_scap_4/activation
+y[23] = /forceset/delt_scap_4/fiber_length
+y[24] = /forceset/delt_scap_5/activation
+y[25] = /forceset/delt_scap_5/fiber_length
+y[26] = /forceset/delt_scap_6/activation
+y[27] = /forceset/delt_scap_6/fiber_length
+y[28] = /forceset/delt_scap_7/activation
+y[29] = /forceset/delt_scap_7/fiber_length
+y[30] = /forceset/delt_scap_8/activation
+y[31] = /forceset/delt_scap_8/fiber_length
+y[32] = /forceset/delt_scap_9/activation
+y[33] = /forceset/delt_scap_9/fiber_length
+y[34] = /forceset/delt_scap10/activation
+y[35] = /forceset/delt_scap10/fiber_length
+y[36] = /forceset/delt_scap11/activation
+y[37] = /forceset/delt_scap11/fiber_length
+y[38] = /forceset/delt_clav_1/activation
+y[39] = /forceset/delt_clav_1/fiber_length
+y[40] = /forceset/delt_clav_2/activation
+y[41] = /forceset/delt_clav_2/fiber_length
+y[42] = /forceset/delt_clav_3/activation
+y[43] = /forceset/delt_clav_3/fiber_length
+y[44] = /forceset/delt_clav_4/activation
+y[45] = /forceset/delt_clav_4/fiber_length
+y[46] = /forceset/tric_long_1/activation
+y[47] = /forceset/tric_long_1/fiber_length
+y[48] = /forceset/tric_long_2/activation
+y[49] = /forceset/tric_long_2/fiber_length
+y[50] = /forceset/tric_long_3/activation
+y[51] = /forceset/tric_long_3/fiber_length
+y[52] = /forceset/tric_long_4/activation
+y[53] = /forceset/tric_long_4/fiber_length
+y[54] = /forceset/tric_med_1/activation
+y[55] = /forceset/tric_med_1/fiber_length
+y[56] = /forceset/tric_med_2/activation
+y[57] = /forceset/tric_med_2/fiber_length
+y[58] = /forceset/tric_med_3/activation
+y[59] = /forceset/tric_med_3/fiber_length
+y[60] = /forceset/tric_med_4/activation
+y[61] = /forceset/tric_med_4/fiber_length
+y[62] = /forceset/tric_med_5/activation
+y[63] = /forceset/tric_med_5/fiber_length
+y[64] = /forceset/tric_lat_1/activation
+y[65] = /forceset/tric_lat_1/fiber_length
+y[66] = /forceset/tric_lat_2/activation
+y[67] = /forceset/tric_lat_2/fiber_length
+y[68] = /forceset/tric_lat_3/activation
+y[69] = /forceset/tric_lat_3/fiber_length
+y[70] = /forceset/tric_lat_4/activation
+y[71] = /forceset/tric_lat_4/fiber_length
+y[72] = /forceset/tric_lat_5/activation
+y[73] = /forceset/tric_lat_5/fiber_length
+y[74] = /forceset/bic_s/activation
+y[75] = /forceset/bic_s/fiber_length
+y[76] = /forceset/coracobr_1/activation
+y[77] = /forceset/coracobr_1/fiber_length
+y[78] = /forceset/coracobr_2/activation
+y[79] = /forceset/coracobr_2/fiber_length
+y[80] = /forceset/coracobr_3/activation
+y[81] = /forceset/coracobr_3/fiber_length
+y[82] = /forceset/brachialis_1/activation
+y[83] = /forceset/brachialis_1/fiber_length
+y[84] = /forceset/brachialis_2/activation
+y[85] = /forceset/brachialis_2/fiber_length
+y[86] = /forceset/brachialis_3/activation
+y[87] = /forceset/brachialis_3/fiber_length
+y[88] = /forceset/brachialis_4/activation
+y[89] = /forceset/brachialis_4/fiber_length
+y[90] = /forceset/brachialis_5/activation
+y[91] = /forceset/brachialis_5/fiber_length
+y[92] = /forceset/brachialis_6/activation
+y[93] = /forceset/brachialis_6/fiber_length
+y[94] = /forceset/brachialis_7/activation
+y[95] = /forceset/brachialis_7/fiber_length
+y[96] = /forceset/brachiorad_1/activation
+y[97] = /forceset/brachiorad_1/fiber_length
+y[98] = /forceset/brachiorad_2/activation
+y[99] = /forceset/brachiorad_2/fiber_length
+y[100] = /forceset/brachiorad_3/activation
+y[101] = /forceset/brachiorad_3/fiber_length
+y[102] = /forceset/pron_teres_1/activation
+y[103] = /forceset/pron_teres_1/fiber_length
+y[104] = /forceset/pron_teres_2/activation
+y[105] = /forceset/pron_teres_2/fiber_length
+y[106] = /forceset/pron_quad_1/activation
+y[107] = /forceset/pron_quad_1/fiber_length
+y[108] = /forceset/pron_quad_2/activation
+y[109] = /forceset/pron_quad_2/fiber_length
+y[110] = /forceset/pron_quad_3/activation
+y[111] = /forceset/pron_quad_3/fiber_length
+y[112] = /forceset/anconeus_1/activation
+y[113] = /forceset/anconeus_1/fiber_length
+y[114] = /forceset/anconeus_2/activation
+y[115] = /forceset/anconeus_2/fiber_length
+y[116] = /forceset/anconeus_3/activation
+y[117] = /forceset/anconeus_3/fiber_length
+y[118] = /forceset/anconeus_4/activation
+y[119] = /forceset/anconeus_4/fiber_length
+y[120] = /forceset/anconeus_5/activation
+y[121] = /forceset/anconeus_5/fiber_length
+y[122] = /forceset/supinator_1/activation
+y[123] = /forceset/supinator_1/fiber_length
+y[124] = /forceset/supinator_2/activation
+y[125] = /forceset/supinator_2/fiber_length
+y[126] = /forceset/supinator_3/activation
+y[127] = /forceset/supinator_3/fiber_length
+y[128] = /forceset/supinator_4/activation
+y[129] = /forceset/supinator_4/fiber_length
+y[130] = /forceset/supinator_5/activation
+y[131] = /forceset/supinator_5/fiber_length
+y[132] = /forceset/trap_scap_1/activation
+y[133] = /forceset/trap_scap_1/fiber_length
+y[134] = /forceset/trap_scap_2/activation
+y[135] = /forceset/trap_scap_2/fiber_length
+y[136] = /forceset/trap_scap_3/activation
+y[137] = /forceset/trap_scap_3/fiber_length
+y[138] = /forceset/trap_scap_4/activation
+y[139] = /forceset/trap_scap_4/fiber_length
+y[140] = /forceset/trap_scap_5/activation
+y[141] = /forceset/trap_scap_5/fiber_length
+y[142] = /forceset/trap_scap_6/activation
+y[143] = /forceset/trap_scap_6/fiber_length
+y[144] = /forceset/trap_scap_7/activation
+y[145] = /forceset/trap_scap_7/fiber_length
+y[146] = /forceset/trap_scap_8/activation
+y[147] = /forceset/trap_scap_8/fiber_length
+y[148] = /forceset/trap_scap_9/activation
+y[149] = /forceset/trap_scap_9/fiber_length
+y[150] = /forceset/trap_scap10/activation
+y[151] = /forceset/trap_scap10/fiber_length
+y[152] = /forceset/trap_scap11/activation
+y[153] = /forceset/trap_scap11/fiber_length
+y[154] = /forceset/ter_min_1/activation
+y[155] = /forceset/ter_min_1/fiber_length
+y[156] = /forceset/ter_min_2/activation
+y[157] = /forceset/ter_min_2/fiber_length
+y[158] = /forceset/ter_min_3/activation
+y[159] = /forceset/ter_min_3/fiber_length
+y[160] = /forceset/ter_maj_1/activation
+y[161] = /forceset/ter_maj_1/fiber_length
+y[162] = /forceset/ter_maj_2/activation
+y[163] = /forceset/ter_maj_2/fiber_length
+y[164] = /forceset/ter_maj_3/activation
+y[165] = /forceset/ter_maj_3/fiber_length
+y[166] = /forceset/ter_maj_4/activation
+y[167] = /forceset/ter_maj_4/fiber_length
+y[168] = /forceset/supra_1/activation
+y[169] = /forceset/supra_1/fiber_length
+y[170] = /forceset/supra_2/activation
+y[171] = /forceset/supra_2/fiber_length
+y[172] = /forceset/supra_3/activation
+y[173] = /forceset/supra_3/fiber_length
+y[174] = /forceset/supra_4/activation
+y[175] = /forceset/supra_4/fiber_length
+y[176] = /forceset/infra_1/activation
+y[177] = /forceset/infra_1/fiber_length
+y[178] = /forceset/infra_2/activation
+y[179] = /forceset/infra_2/fiber_length
+y[180] = /forceset/infra_3/activation
+y[181] = /forceset/infra_3/fiber_length
+y[182] = /forceset/infra_4/activation
+y[183] = /forceset/infra_4/fiber_length
+y[184] = /forceset/infra_5/activation
+y[185] = /forceset/infra_5/fiber_length
+y[186] = /forceset/infra_6/activation
+y[187] = /forceset/infra_6/fiber_length
+y[188] = /forceset/rhomboid_1/activation
+y[189] = /forceset/rhomboid_1/fiber_length
+y[190] = /forceset/rhomboid_2/activation
+y[191] = /forceset/rhomboid_2/fiber_length
+y[192] = /forceset/rhomboid_3/activation
+y[193] = /forceset/rhomboid_3/fiber_length
+y[194] = /forceset/rhomboid_4/activation
+y[195] = /forceset/rhomboid_4/fiber_length
+y[196] = /forceset/rhomboid_5/activation
+y[197] = /forceset/rhomboid_5/fiber_length
+y[198] = /forceset/lev_scap_1/activation
+y[199] = /forceset/lev_scap_1/fiber_length
+y[200] = /forceset/lev_scap_2/activation
+y[201] = /forceset/lev_scap_2/fiber_length
+y[202] = /forceset/subscap_1/activation
+y[203] = /forceset/subscap_1/fiber_length
+y[204] = /forceset/subscap_2/activation
+y[205] = /forceset/subscap_2/fiber_length
+y[206] = /forceset/subscap_3/activation
+y[207] = /forceset/subscap_3/fiber_length
+y[208] = /forceset/subscap_4/activation
+y[209] = /forceset/subscap_4/fiber_length
+y[210] = /forceset/subscap_5/activation
+y[211] = /forceset/subscap_5/fiber_length
+y[212] = /forceset/subscap_6/activation
+y[213] = /forceset/subscap_6/fiber_length
+y[214] = /forceset/subscap_7/activation
+y[215] = /forceset/subscap_7/fiber_length
+y[216] = /forceset/subscap_8/activation
+y[217] = /forceset/subscap_8/fiber_length
+y[218] = /forceset/subscap_9/activation
+y[219] = /forceset/subscap_9/fiber_length
+y[220] = /forceset/subscap10/activation
+y[221] = /forceset/subscap10/fiber_length
+y[222] = /forceset/subscap11/activation
+y[223] = /forceset/subscap11/fiber_length
+y[224] = /forceset/pect_min_1/activation
+y[225] = /forceset/pect_min_1/fiber_length
+y[226] = /forceset/pect_min_2/activation
+y[227] = /forceset/pect_min_2/fiber_length
+y[228] = /forceset/pect_min_3/activation
+y[229] = /forceset/pect_min_3/fiber_length
+y[230] = /forceset/pect_min_4/activation
+y[231] = /forceset/pect_min_4/fiber_length
+y[232] = /forceset/pect_maj_t_1/activation
+y[233] = /forceset/pect_maj_t_1/fiber_length
+y[234] = /forceset/pect_maj_t_2/activation
+y[235] = /forceset/pect_maj_t_2/fiber_length
+y[236] = /forceset/pect_maj_t_3/activation
+y[237] = /forceset/pect_maj_t_3/fiber_length
+y[238] = /forceset/pect_maj_t_4/activation
+y[239] = /forceset/pect_maj_t_4/fiber_length
+y[240] = /forceset/pect_maj_t_5/activation
+y[241] = /forceset/pect_maj_t_5/fiber_length
+y[242] = /forceset/pect_maj_t_6/activation
+y[243] = /forceset/pect_maj_t_6/fiber_length
+y[244] = /forceset/pect_maj_c_1/activation
+y[245] = /forceset/pect_maj_c_1/fiber_length
+y[246] = /forceset/pect_maj_c_2/activation
+y[247] = /forceset/pect_maj_c_2/fiber_length
+y[248] = /forceset/LD_L1_r/activation
+y[249] = /forceset/LD_L1_r/fiber_length
+y[250] = /forceset/LD_L2_r/activation
+y[251] = /forceset/LD_L2_r/fiber_length
+y[252] = /forceset/LD_L3_r/activation
+y[253] = /forceset/LD_L3_r/fiber_length
+y[254] = /forceset/LD_L4_r/activation
+y[255] = /forceset/LD_L4_r/fiber_length
+y[256] = /forceset/LD_L5_r/activation
+y[257] = /forceset/LD_L5_r/fiber_length
+y[258] = /forceset/LD_T12_r/activation
+y[259] = /forceset/LD_T12_r/fiber_length
+y[260] = /forceset/LD_T11_r/activation
+y[261] = /forceset/LD_T11_r/fiber_length
+y[262] = /forceset/LD_T10_r/activation
+y[263] = /forceset/LD_T10_r/fiber_length
+y[264] = /forceset/LD_T9_r/activation
+y[265] = /forceset/LD_T9_r/fiber_length
+y[266] = /forceset/LD_T8_r/activation
+y[267] = /forceset/LD_T8_r/fiber_length
+y[268] = /forceset/LD_T7_r/activation
+y[269] = /forceset/LD_T7_r/fiber_length
+y[270] = /forceset/LD_R12_r/activation
+y[271] = /forceset/LD_R12_r/fiber_length
+y[272] = /forceset/LD_R11_r/activation
+y[273] = /forceset/LD_R11_r/fiber_length
+
+Constructing function set for tracking desired kinematics...
+No Actuation analysis found in analysis set -- adding one...
+No Kinematics analysis found in analysis set -- adding one...
+Using the generalized coordinates specified in C:\Users\bos_ro\Documents\opensim_code\Main\Set-up\BUET\CMC\..\Stationary_kinematics\BUET_static_kinematics_GH_y_0.0_arm_add_-10.0_elbow_90.0.mot to set the initial configuration.
+Using IPOPT optimizer algorithm.
+Setting optimizer print level to 6.
+Setting optimizer convergence tolerance to 0.000100000.
+Setting optimizer maximum iterations to 2000.
+Setting cmc controller to use verbose printing.
+
+-----------------------------------------------------------------
+Computing initial values for muscles states (activation, length):
+-----------------------------------------------------------------
+ -- Start time = Mon Nov  3 11:53:04 2025
+-----------------------------------------------------------------
+
+-------------------------------------------
+CMC::computeInitialStates, guess (ti = 0.0):
+-------------------------------------------
+ -- Q = ~[0 0 0 0 -0.174533 0 1.5708 0]
+ -- U = ~[0 0 0 0 9.24446e-31 0 -1.12413e-29 0]
+ -- Z = ~[0.05 0.0797942 0.05 0.0696974 0.05 0.076682 0.05 0.0754603 0.05 0.0768617 0.05 0.0817184 0.05 0.0858115 0.05 0.0840884 0.05 0.0859162 0.05 0.0831491 0.05 0.0838384 0.05 0.0783802 0.05 0.0770547 0.05 0.0806761 0.05 0.0850975 0.05 0.0619127 0.05 0.0403608 0.05 0.0509322 0.05 0.0425954 0.05 0.0873955 0.05 0.0332185 0.05 0.0419953 0.05 0.0525287 0.05 0.0638185 0.05 0.0382797 0.05 0.035176 0.05 0.0276944 0.05 0.0244663 0.05 0.0260177 0.05 0.143143 0.05 0.0696678 0.05 0.0701983 0.05 0.0753284 0.05 0.0953705 0.05 0.109097 0.05 0.0914681 0.05 0.0987183 0.05 0.0790741 0.05 0.0587766 0.05 0.0774073 0.05 0.188772 0.05 0.171171 0.05 0.121891 0.05 0.0412042 0.05 0.0516181 0.05 0.026035 0.05 0.0253089 0.05 0.0250296 0.05 0.0309818 0.05 0.0318582 0.05 0.0305146 0.05 0.0377995 0.05 0.0345737 0.05 0.0258424 0.05 0.0435656 0.05 0.0426473 0.05 0.0439021 0.05 0.0434426 0.05 0.168529 0.05 0.130817 0.05 0.0852629 0.05 0.076769 0.05 0.0769044 0.05 0.0798409 0.05 0.0642356 0.05 0.0523843 0.05 0.0672532 0.05 0.0948526 0.05 0.128496 0.05 0.0314515 0.05 0.0365321 0.05 0.0407873 0.05 0.0847089 0.05 0.0963088 0.05 0.0822343 0.05 0.0537489 0.05 0.0915512 0.05 0.0992095 0.05 0.0693891 0.05 0.0791997 0.05 0.0338656 0.05 0.0381512 0.05 0.0444664 0.05 0.0482448 0.05 0.0636363 0.05 0.056526 0.05 0.0781354 0.05 0.0614002 0.05 0.0807404 0.05 0.0685401 0.05 0.0397054 0.05 0.107552 0.05 0.0904089 0.05 0.0510147 0.05 0.0632633 0.05 0.0536326 0.05 0.0547787 0.05 0.0450028 0.05 0.0544863 0.05 0.0453296 0.05 0.051343 0.05 0.043965 0.05 0.0467065 0.05 0.0240607 0.05 0.0389835 0.05 0.0692892 0.05 0.0634319 0.05 0.0821759 0.05 0.119602 0.05 0.11049 0.05 0.121579 0.05 0.137039 0.05 0.133017 0.05 0.121164 0.05 0.178346 0.05 0.156222 0.05 0.263367 0.05 0.285597 0.05 0.300131 0.05 0.312965 0.05 0.326881 0.05 0.248839 0.05 0.2302 0.05 0.224581 0.05 0.102122 0.05 0.181543 0.05 0.171279 0.05 0.204433 0.05 0.192594]
+-------------------------------------------
+
+------------------------------------------------------------
+CMC::computeInitialStates, actuator equilibrium #1 (ti = 0.0):
+------------------------------------------------------------
+ -- Q = ~[0 0 0 0 -0.174533 0 1.5708 0]
+ -- U = ~[0 0 0 0 9.24446e-31 0 -1.12413e-29 0]
+ -- Z = ~[0.0127501 0.0858621 0.0127501 0.073431 0.0127501 0.0776521 0.0127501 0.0745239 0.0127501 0.0734405 0.0127501 0.0802621 0.0127501 0.083531 0.0127501 0.0808775 0.0127501 0.082348 0.0127501 0.0801662 0.0127501 0.082367 0.0127501 0.079986 0.0127501 0.0814472 0.0127501 0.08407 0.0127501 0.0893157 0.0127501 0.0950416 0.0127501 0.0806011 0.0127501 0.0917568 0.0127501 0.0830021 0.0127501 0.11957 0.0127501 0.0673668 0.0127501 0.0748212 0.0127501 0.0862403 0.0127501 0.0983376 0.0127501 0.0760552 0.0127501 0.0717684 0.0127501 0.0599976 0.0127501 0.0561079 0.0127501 0.0573251 0.0127501 0.11051 0.0127501 0.0742422 0.0127501 0.0759039 0.0127501 0.0801059 0.0127501 0.0756487 0.0127501 0.0868869 0.0127501 0.076401 0.0127501 0.0804076 0.0127501 0.0651203 0.0127501 0.0459061 0.0127501 0.0650198 0.0127501 0.149205 0.0127501 0.146931 0.0127501 0.108622 0.0127501 0.0365442 0.0127501 0.0516696 0.0127501 0.0260599 0.0127501 0.0253332 0.0127501 0.0250548 0.0127501 0.0496586 0.0127501 0.0434798 0.0127501 0.0476763 0.0127501 0.0520416 0.0127501 0.0512935 0.0127501 0.0346285 0.0127501 0.052665 0.0127501 0.0426524 0.0127501 0.0439051 0.0127501 0.0434483 0.0127501 0.168538 0.0127501 0.130895 0.0127501 0.0855426 0.0127501 0.0770442 0.0127501 0.077088 0.0127501 0.0800165 0.0127501 0.0644182 0.0127501 0.0526199 0.0127501 0.0674194 0.0127501 0.0950314 0.0127501 0.128663 0.0127501 0.0343526 0.0127501 0.0388384 0.0127501 0.0428265 0.0127501 0.0895328 0.0127501 0.10426 0.0127501 0.0888867 0.0127501 0.0566857 0.0127501 0.0889602 0.0127501 0.0968522 0.0127501 0.0678567 0.0127501 0.0776395 0.0127501 0.0333104 0.0127501 0.0377952 0.0127501 0.0437061 0.0127501 0.0474509 0.0127501 0.0617537 0.0127501 0.0546734 0.0127501 0.0782134 0.0127501 0.0617006 0.0127501 0.0808947 0.0127501 0.0686785 0.0127501 0.0398451 0.0127501 0.107646 0.0127501 0.0904986 0.0127501 0.0504194 0.0127501 0.0623633 0.0127501 0.0537279 0.0127501 0.0544556 0.0127501 0.0442721 0.0127501 0.054892 0.0127501 0.0453583 0.0127501 0.0513941 0.0127501 0.0439284 0.0127501 0.0482154 0.0127501 0.0265934 0.0127501 0.0392032 0.0127501 0.0694861 0.0127501 0.0635667 0.0127501 0.0822974 0.0127501 0.125959 0.0127501 0.118631 0.0127501 0.130997 0.0127501 0.145448 0.0127501 0.140084 0.0127501 0.129606 0.0127501 0.185111 0.0127501 0.16182 0.0127501 0.264972 0.0127501 0.286712 0.0127501 0.301814 0.0127501 0.314458 0.0127501 0.328418 0.0127501 0.250809 0.0127501 0.232231 0.0127501 0.22664 0.0127501 0.10462 0.0127501 0.18384 0.0127501 0.173638 0.0127501 0.20657 0.0127501 0.194625]
+------------------------------------------------------------
+
+------------------------------------------------------------
+CMC::computeInitialStates, actuator equilibrium #2 (ti = 0.0):
+------------------------------------------------------------
+ -- Q = ~[0 0 0 0 -0.174533 0 1.5708 0]
+ -- U = ~[0 0 0 0 9.24446e-31 0 -1.12413e-29 0]
+ -- Z = ~[0.0102079 0.0859093 0.0102079 0.0734767 0.0102079 0.0776916 0.0102079 0.0745388 0.0102079 0.073452 0.0102079 0.0802958 0.0102079 0.0835603 0.0102079 0.0808966 0.0102079 0.0823708 0.0102079 0.0801942 0.0102079 0.082383 0.0102079 0.0800258 0.0102079 0.0815036 0.0102079 0.0841084 0.0102079 0.0893619 0.0102079 0.0951895 0.0102079 0.0807667 0.0102079 0.0918986 0.0102079 0.0831397 0.0102079 0.119573 0.0102079 0.067444 0.0102079 0.0748228 0.0102079 0.0862508 0.0102079 0.0983503 0.0102079 0.0761751 0.0102079 0.071904 0.0102079 0.0601482 0.0102079 0.0562244 0.0102079 0.0574342 0.0102079 0.110647 0.0102079 0.0742722 0.0102079 0.0759411 0.0102079 0.0801487 0.0102079 0.0757007 0.0102079 0.0869242 0.0102079 0.0764252 0.0102079 0.0804221 0.0102079 0.0651302 0.0102079 0.0459287 0.0102079 0.0650235 0.0102079 0.149282 0.0102079 0.147007 0.0102079 0.108716 0.0102079 0.0365911 0.0102079 0.0516735 0.0102079 0.0260625 0.0102079 0.0253358 0.0102079 0.0250575 0.0102079 0.0496587 0.0102079 0.0434063 0.0102079 0.0476764 0.0102079 0.0520417 0.0102079 0.0512936 0.0102079 0.0346309 0.0102079 0.0526651 0.0102079 0.0426528 0.0102079 0.0439053 0.0102079 0.0434487 0.0102079 0.168539 0.0102079 0.130902 0.0102079 0.0855749 0.0102079 0.0770762 0.0102079 0.0771089 0.0102079 0.0800366 0.0102079 0.0644388 0.0102079 0.0526467 0.0102079 0.0674375 0.0102079 0.0950512 0.0102079 0.128682 0.0102079 0.034381 0.0102079 0.0388684 0.0102079 0.0428372 0.0102079 0.0895358 0.0102079 0.104266 0.0102079 0.0888939 0.0102079 0.0567009 0.0102079 0.0889605 0.0102079 0.0968527 0.0102079 0.0678667 0.0102079 0.0776408 0.0102079 0.0333281 0.0102079 0.0378491 0.0102079 0.0437542 0.0102079 0.0474922 0.0102079 0.0617854 0.0102079 0.0546932 0.0102079 0.078222 0.0102079 0.0617333 0.0102079 0.0809112 0.0102079 0.0686928 0.0102079 0.0398583 0.0102079 0.107656 0.0102079 0.0905082 0.0102079 0.0504368 0.0102079 0.0623914 0.0102079 0.0537641 0.0102079 0.0544875 0.0102079 0.0443047 0.0102079 0.0549381 0.0102079 0.0453977 0.0102079 0.051416 0.0102079 0.0439595 0.0102079 0.0482209 0.0102079 0.0265972 0.0102079 0.0392266 0.0102079 0.0695075 0.0102079 0.0635809 0.0102079 0.0823101 0.0102079 0.125978 0.0102079 0.118653 0.0102079 0.131026 0.0102079 0.145464 0.0102079 0.140099 0.0102079 0.129627 0.0102079 0.185113 0.0102079 0.161821 0.0102079 0.265013 0.0102079 0.286756 0.0102079 0.30186 0.0102079 0.314506 0.0102079 0.328465 0.0102079 0.250846 0.0102079 0.232265 0.0102079 0.226665 0.0102079 0.104673 0.0102079 0.183868 0.0102079 0.173665 0.0102079 0.2066 0.0102079 0.194654]
+------------------------------------------------------------
+
+CMC::computeControls, t = 0.0
+ -- step size = 0.03, target time = 0.03
+------------------------------
+CMC::computeControls, summary:
+------------------------------
+ -- Q = ~[0 0 0 0 -0.174533 0 1.5708 0]
+ -- U = ~[0 0 0 0 9.24446e-31 0 -1.12413e-29 0]
+ -- Z = ~[0.0102079 0.0859093 0.0102079 0.0734767 0.0102079 0.0776916 0.0102079 0.0745388 0.0102079 0.073452 0.0102079 0.0802958 0.0102079 0.0835603 0.0102079 0.0808966 0.0102079 0.0823708 0.0102079 0.0801942 0.0102079 0.082383 0.0102079 0.0800258 0.0102079 0.0815036 0.0102079 0.0841084 0.0102079 0.0893619 0.0102079 0.0951895 0.0102079 0.0807667 0.0102079 0.0918986 0.0102079 0.0831397 0.0102079 0.119573 0.0102079 0.067444 0.0102079 0.0748228 0.0102079 0.0862508 0.0102079 0.0983503 0.0102079 0.0761751 0.0102079 0.071904 0.0102079 0.0601482 0.0102079 0.0562244 0.0102079 0.0574342 0.0102079 0.110647 0.0102079 0.0742722 0.0102079 0.0759411 0.0102079 0.0801487 0.0102079 0.0757007 0.0102079 0.0869242 0.0102079 0.0764252 0.0102079 0.0804221 0.0102079 0.0651302 0.0102079 0.0459287 0.0102079 0.0650235 0.0102079 0.149282 0.0102079 0.147007 0.0102079 0.108716 0.0102079 0.0365911 0.0102079 0.0516735 0.0102079 0.0260625 0.0102079 0.0253358 0.0102079 0.0250575 0.0102079 0.0496587 0.0102079 0.0434063 0.0102079 0.0476764 0.0102079 0.0520417 0.0102079 0.0512936 0.0102079 0.0346309 0.0102079 0.0526651 0.0102079 0.0426528 0.0102079 0.0439053 0.0102079 0.0434487 0.0102079 0.168539 0.0102079 0.130902 0.0102079 0.0855749 0.0102079 0.0770762 0.0102079 0.0771089 0.0102079 0.0800366 0.0102079 0.0644388 0.0102079 0.0526467 0.0102079 0.0674375 0.0102079 0.0950512 0.0102079 0.128682 0.0102079 0.034381 0.0102079 0.0388684 0.0102079 0.0428372 0.0102079 0.0895358 0.0102079 0.104266 0.0102079 0.0888939 0.0102079 0.0567009 0.0102079 0.0889605 0.0102079 0.0968527 0.0102079 0.0678667 0.0102079 0.0776408 0.0102079 0.0333281 0.0102079 0.0378491 0.0102079 0.0437542 0.0102079 0.0474922 0.0102079 0.0617854 0.0102079 0.0546932 0.0102079 0.078222 0.0102079 0.0617333 0.0102079 0.0809112 0.0102079 0.0686928 0.0102079 0.0398583 0.0102079 0.107656 0.0102079 0.0905082 0.0102079 0.0504368 0.0102079 0.0623914 0.0102079 0.0537641 0.0102079 0.0544875 0.0102079 0.0443047 0.0102079 0.0549381 0.0102079 0.0453977 0.0102079 0.051416 0.0102079 0.0439595 0.0102079 0.0482209 0.0102079 0.0265972 0.0102079 0.0392266 0.0102079 0.0695075 0.0102079 0.0635809 0.0102079 0.0823101 0.0102079 0.125978 0.0102079 0.118653 0.0102079 0.131026 0.0102079 0.145464 0.0102079 0.140099 0.0102079 0.129627 0.0102079 0.185113 0.0102079 0.161821 0.0102079 0.265013 0.0102079 0.286756 0.0102079 0.30186 0.0102079 0.314506 0.0102079 0.328465 0.0102079 0.250846 0.0102079 0.232265 0.0102079 0.226665 0.0102079 0.104673 0.0102079 0.183868 0.0102079 0.173665 0.0102079 0.2066 0.0102079 0.194654]
+ -- Qdesired =  0 0 0 0 -0.174533 0 1.5708 0
+ -- Udesired =  0 0 0 0 0 0 0 0
+ -- Qcorrection =  0 0 0 0 0 0 0 0
+ -- Ucorrection =  0 0 0 0 9.24446e-31 0 -1.12413e-29 0
+------------------------------
+
+Errors at time 0.0: 
+Task 'arm_flex_r': pErr = 0.0, vErr = 0.0.
+
+Task 'arm_add_r': pErr = 0.0, vErr = 0.0.
+
+Task 'arm_rot_r': pErr = 0.0, vErr = 0.0.
+
+Task 'elbow_flex_r': pErr = 0.0, vErr = 0.0.
+
+Setting stress term weight to 1.0 (relativeTau was 0.1).
+
+xmin:  0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02
+xmax:  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+
+tiReal = 0.0, tfReal = 0.03
+Min forces:  5.09033 3.75513 8.73824 4.87838 5.02524 7.49727 5.7692 10.1792 12.3649 13.7364 9.87982 2.52239 3.03752 2.34408 2.1714 4.10215 5.26114 4.76859 5.09352 117.685 4.80061 22.3784 11.1067 8.49193 2.88199 7.48968 3.80244 4.82319 1.49437 3.29979 8.68153 5.85134 4.23904 5.98356 3.09503 3.0373 2.52655 2.77884 2.06254 3.15285 0.589119 1.60279 1.13258 7.23787 22.0484 1.204 2.80493 3.70156 373.041 2816.41 672.17 1051.01 1048.73 6.24799 2203.36 215.101 329.797 377.058 6.6662 9.2353 3.65742 2.55465 2.30235 1.97088 1.69256 2.24674 1.96432 1.4284 1.82647 1.97988 3.24755 3.42374 2.52183 1.33484 2.81689 1.98219 163.095 147.939 18.5169 34.6815 3.45623 3.43257 2.96414 3.35138 5.84258 3.1208 0.934402 1.27126 2.19368 1.07535 0.559918 1.5655 1.72333 0.861461 1.54612 4.77847 4.68075 1.52462 2.51669 2.15303 0.979379 3.24721 0.79572 0.160505 0.581318 1.64557 1.5281 0.662119 2.00217 1.83795 2.77149 2.8771 2.63127 3.86335 35.7753 52.1495 0.78398 0.788562 0.965197 0.962545 0.960257 0.432311 0.514427 0.512558 0.181474 0.336327 0.332076 0.349916 0.511748
+Max forces:  212.698 155.565 365.125 98.1556 101.967 234.116 119.685 175.787 232.686 366.894 200.99 105.544 124.347 86.5629 90.6891 153.392 188.844 180.501 193.176 245.908 187.132 205.253 177.627 86.9919 104.206 272.147 131.657 173.24 54.3608 127.012 156.014 113.02 86.6597 245.106 130.661 130.072 75.0919 87.7331 86.3375 104.063 24.6018 66.8953 39.7051 285.511 112.1 52.8544 123.159 162.382 375.969 2813.72 673.382 1059.01 1058.42 38.0567 2211.72 340.615 359.938 445.466 103.243 145.365 155.694 108.245 99.1538 85.0442 72.6012 94.6116 84.8187 61.9957 79.7777 80.7192 132.955 147.766 111.473 58.8573 123.986 85.8334 205.903 188.167 209.937 113.219 146.227 134.995 118.207 136.06 244.235 133.271 40.9726 53.6769 95.3685 46.8011 24.2309 68.7887 75.6199 36.7541 65.0622 196.621 195.067 63.2512 102.211 88.3231 41.6167 134.595 34.8911 7.03724 24.4707 70.8159 66.3584 28.9393 87.4856 80.0269 120.177 126.152 115.357 168.331 154.83 112.854 34.2113 34.4148 42.1247 42.0068 41.9499 18.8832 22.4676 22.4702 7.73017 14.6861 14.499 15.287 22.3492
+
+CMC::computeControls: small force range for anconeus_2 (2816.41 to 2813.72)
+
+performance = 40624.0
+Desired actuator forces:  212.698 155.565 365.125 98.1556 101.967 234.116 119.685 175.787 232.686 13.7364 9.87982 2.52239 3.03752 2.34408 2.1714 4.10215 5.26114 4.76859 5.09352 117.685 4.80061 22.3784 11.1067 8.49193 2.88199 7.48968 3.80244 4.82319 1.49437 127.012 8.68153 5.85134 4.23904 245.106 130.661 130.072 75.0919 87.7331 86.3375 104.063 24.6018 66.8953 39.7051 285.511 22.0525 1.22378 2.85504 3.76047 373.041 2813.72 672.17 1051.01 1048.73 6.24799 2203.36 215.103 329.797 377.058 6.67568 9.24917 3.70584 2.58808 2.33135 1.99412 1.71745 2.28461 1.9987 1.44897 1.84729 80.7192 132.955 147.766 111.473 58.8573 123.986 85.8334 163.095 147.939 18.5169 34.6815 146.226 3.43257 2.96415 136.06 5.84258 133.271 0.946882 1.30082 2.23467 1.10305 0.5943 1.5918 1.75138 0.861462 1.54612 4.77847 4.68075 1.52462 2.51669 51.9628 0.979382 134.595 34.8911 7.03723 0.598059 1.67658 1.56141 0.676338 2.00217 1.83795 2.77149 2.8771 2.63127 3.86335 35.7753 52.1495 0.783981 0.788563 0.965198 0.962545 0.960258 0.432314 0.514434 22.4701 7.73017 14.6861 14.499 0.349917 0.51175
+
+CMC::computeControls, root solve (tFinal = 0.03):
+ -- controls = 0.03
+
+CMC::computeControls, t = 0.0
+ -- step size = 0.03, target time = 0.03
+------------------------------
+CMC::computeControls, summary:
+------------------------------
+ -- Q = ~[0 0 0 0 -0.174533 0 1.5708 0]
+ -- U = ~[0 0 0 0 9.24446e-31 0 -1.12413e-29 0]
+ -- Z = ~[0.999979 0.0837115 0.999979 0.0713773 0.999979 0.0758689 0.999979 0.0733806 0.999979 0.0725523 0.999979 0.0784004 0.999979 0.0814136 0.999979 0.0792747 0.999979 0.080559 0.02 0.0801016 0.02 0.0823278 0.02 0.0799007 0.02 0.0813297 0.02 0.083986 0.02 0.0892161 0.02 0.094789 0.02 0.0803404 0.02 0.091499 0.02 0.0827462 0.02 0.119563 0.02 0.0672208 0.02 0.074817 0.02 0.0862135 0.02 0.0983043 0.02 0.0758525 0.02 0.0715506 0.02 0.0597776 0.02 0.0559225 0.02 0.0571473 0.999979 0.105004 0.02 0.0741726 0.02 0.0758202 0.02 0.0800108 0.999979 0.0733615 0.999979 0.085178 0.999979 0.0752717 0.999979 0.0795348 0.999979 0.064539 0.999979 0.0448857 0.999979 0.0648072 0.999979 0.145744 0.999979 0.143481 0.999979 0.104205 0.999979 0.0345022 0.02 0.051659 0.02 0.0260534 0.02 0.0253269 0.02 0.0250482 0.02 0.0496585 0.02 0.0434825 0.02 0.0476763 0.02 0.0520413 0.02 0.0512933 0.02 0.0346218 0.02 0.0526649 0.02 0.0426514 0.02 0.0439045 0.02 0.0434472 0.02 0.168536 0.02 0.130877 0.02 0.0854698 0.02 0.0769726 0.02 0.0770398 0.02 0.0799702 0.02 0.0643708 0.02 0.0525596 0.02 0.0673765 0.02 0.0949847 0.02 0.128619 0.999979 0.0330884 0.999979 0.0375035 0.999979 0.0423152 0.999979 0.08938 0.999979 0.103951 0.999979 0.0885198 0.999979 0.0558997 0.02 0.0889592 0.02 0.0968508 0.02 0.0678309 0.02 0.0776357 0.999979 0.0324328 0.02 0.0376839 0.02 0.0436071 0.999979 0.0456223 0.02 0.0616852 0.999979 0.0537367 0.02 0.0781929 0.02 0.0616251 0.02 0.0808549 0.02 0.0686436 0.022 0.0398032 0.02 0.107622 0.02 0.0904752 0.02 0.0503803 0.02 0.0623021 0.02 0.0536508 0.02 0.0543856 0.02 0.0441987 0.02 0.0547952 0.540405 0.0439554 0.02 0.051344 0.999979 0.0424813 0.999979 0.047948 0.999979 0.0263812 0.02 0.0391487 0.02 0.0694356 0.02 0.0635323 0.02 0.0822663 0.02 0.125913 0.02 0.118577 0.02 0.130928 0.02 0.14541 0.02 0.140047 0.02 0.129555 0.02 0.185109 0.02 0.161819 0.02 0.264876 0.02 0.286608 0.02 0.301705 0.02 0.314344 0.02 0.328306 0.02 0.250723 0.02 0.23215 0.999979 0.22541 0.999979 0.101692 0.999979 0.182512 0.999979 0.172369 0.02 0.2065 0.02 0.194557]
+ -- Qdesired =  0 0 0 0 -0.174533 0 1.5708 0
+ -- Udesired =  0 0 0 0 0 0 0 0
+ -- Qcorrection =  0 0 0 0 0 0 0 0
+ -- Ucorrection =  0 0 0 0 9.24446e-31 0 -1.12413e-29 0
+------------------------------
+
+Errors at time 0.0: 
+Task 'arm_flex_r': pErr = 0.0, vErr = 0.0.
+
+Task 'arm_add_r': pErr = 0.0, vErr = 0.0.
+
+Task 'arm_rot_r': pErr = 0.0, vErr = 0.0.
+
+Task 'elbow_flex_r': pErr = 0.0, vErr = 0.0.
+
+Setting stress term weight to 1.0 (relativeTau was 0.1).
+
+xmin:  0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.02
+xmax:  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+
+tiReal = 0.0, tfReal = 0.03
+Min forces:  109.337 82.2867 194.214 52.041 51.7348 130.398 71.2023 100.209 134.372 13.7801 9.89311 2.53937 3.07011 2.35799 2.18556 4.35224 5.72221 4.97743 5.29411 117.69 4.94883 22.3858 11.116 8.49668 3.0732 8.09358 4.23252 5.2291 1.60932 86.0059 8.71021 5.88089 4.26565 136.746 66.8621 62.7643 36.2633 41.1285 46.0629 45.1928 13.0978 35.5761 25.8145 164.72 22.0531 1.20631 2.81026 3.70875 373.041 2862.17 672.171 1051.01 1048.73 6.24959 2203.36 215.106 329.798 377.06 6.66994 9.24132 3.67042 2.56488 2.3088 1.97638 1.69748 2.25632 1.9692 1.43173 1.83053 43.8701 71.7777 68.8087 46.5394 24.8193 52.6162 38.5375 163.096 147.94 18.5292 34.6848 70.3257 3.49669 3.0118 74.7699 5.87891 63.4694 0.936253 1.276 2.19852 1.07763 0.599991 1.56846 1.72666 0.864625 1.55501 4.81964 4.70776 1.53319 2.54495 32.0816 0.982735 68.8169 15.0475 3.02794 0.583533 1.64987 1.53149 0.663453 2.00627 1.84191 2.77797 2.88281 2.63668 3.87216 35.78 52.1519 0.785685 0.790279 0.967299 0.96464 0.962307 0.433233 0.515522 9.75435 3.64385 6.47523 6.38771 0.350663 0.512837
+Max forces:  251.257 185.344 436.94 116.353 119.261 284.525 148.58 213.296 284.473 367.128 201.096 105.607 124.436 86.6182 90.742 153.884 189.801 180.887 193.541 245.979 187.421 205.329 177.712 87.0411 104.644 273.384 132.614 174.069 54.5921 169.398 156.17 113.154 86.7701 297.837 154.474 151.395 87.2093 101.252 103.5 118.294 29.4469 80.0221 51.9469 349.678 112.161 52.8749 123.206 162.446 375.97 2814.08 673.383 1059.02 1058.42 38.076 2211.72 340.67 359.95 445.497 103.28 145.423 155.769 108.298 99.1982 85.0824 72.6337 94.6578 84.8546 62.0216 79.8109 96.875 159.269 170.602 126.119 66.6903 140.561 98.0223 205.92 188.183 210.059 113.257 169.055 135.12 118.307 163.896 244.375 154.469 40.9888 53.7016 95.4072 46.8198 24.2424 68.8153 75.6494 36.772 65.0989 196.746 195.172 63.2832 102.282 93.6425 41.6359 158.405 39.6908 7.9809 24.4818 70.8462 66.3853 28.9507 87.5204 80.0592 120.227 126.202 115.404 168.401 154.878 112.877 34.2253 34.4289 42.142 42.024 41.967 18.8909 22.4767 25.5966 8.8648 16.7744 16.5576 15.2932 22.3583
+
+CMC::computeControls: small force range for anconeus_2 (2862.17 to 2814.08)
+
+performance = 9290.73
+Desired actuator forces:  251.257 185.344 436.94 116.353 119.261 284.525 148.58 213.296 284.473 20.875 9.89311 2.53937 3.07011 2.35799 2.18556 4.35224 5.72221 4.97743 5.29411 117.69 4.94883 22.3858 11.116 8.49668 3.0732 8.09358 4.23252 5.2291 1.60932 169.398 8.71021 5.8809 4.26565 297.837 154.474 151.395 87.2093 101.252 103.5 118.294 29.4469 80.0221 51.9469 349.678 22.0572 1.22606 2.86075 3.77864 373.041 2814.08 672.171 1051.01 1048.73 6.24959 2203.36 215.108 329.798 377.061 6.6794 9.25517 3.71848 2.59771 2.33732 1.99926 1.72207 2.29344 2.00301 1.45215 1.85107 96.8749 159.269 170.602 46.5395 24.8193 52.6163 38.5377 163.096 147.94 18.5292 34.6848 169.055 54.7988 118.307 163.896 244.375 154.469 0.948247 1.3056 2.23875 1.10543 0.634229 1.59454 1.75437 0.864628 1.55501 4.81965 4.70776 1.53319 2.54496 32.0817 0.982754 158.405 15.0475 3.02795 0.59821 1.68055 1.56455 0.67757 2.00628 1.84191 2.77798 2.88281 2.63668 3.87217 35.78 52.1519 0.785693 0.790285 0.967304 0.964645 0.962312 0.433243 0.515534 9.75437 3.64387 6.47526 6.38774 0.350669 0.512845

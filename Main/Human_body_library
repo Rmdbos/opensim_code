@@ -1,0 +1,25 @@
+record Male_50th_percentile
+  import C = Modelica.Units.Conversions;
+  extends Parameters.ParameterTemplates.BodyProportions.BodyDimensionParameters(
+    arm(
+      l_humerus=0.303,
+      l_ulna=0.279,
+      l_manus=0.055),
+    leg(
+      l_femur=0.379,
+      l_tibia=0.375,
+      l_malleolus={0.085,0.167}),
+    torso(
+      b_glenohumeralis=0.193,
+      b_coxa=0.119,
+      l_columna_vertebralis=0.479,
+      h_pelvis=0.094),
+    head(l_toNeck={0,0,0.1}, l_toMass={0,0,0.1}),
+    riggedCAD_Filename=Visualizers.Internal.rootDir +
+        "CAD-Models/50thPercentile_Male.gltf",
+    r={-0.2088 - 0.02,-0.3960 + 0.0015,-0.0144 - 0.04},
+    scale=10,
+    ankleAngle=C.from_deg(26.95),
+    gender=1,
+    percentile="50th");                        //values for head are not literature values
+end Male_50th_percentile;

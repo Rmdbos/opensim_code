@@ -1,0 +1,7 @@
+DAS3_states
+version=1
+nRows=4032
+nColumns=299
+inDegrees=no
+endheader
+time	/jointset/sc1/SC_y/value	/jointset/sc1/SC_y/speed	/jointset/sc2/SC_z/value	/jointset/sc2/SC_z/speed	/jointset/sc3/SC_x/value	/jointset/sc3/SC_x/speed	/jointset/ac1/AC_y/value	/jointset/ac1/AC_y/speed	/jointset/ac2/AC_z/value	/jointset/ac2/AC_z/speed	/jointset/ac3/AC_x/value	/jointset/ac3/AC_x/speed	/jointset/gh1/GH_y/value	/jointset/gh1/GH_y/speed	/jointset/gh2/GH_z/value	/jointset/gh2/GH_z/speed	/jointset/gh3/GH_yy/value	/jointset/gh3/GH_yy/speed	/jointset/hu/EL_x/value	/jointset/hu/EL_x/speed	/jointset/ur/PS_y/value	/jointset/ur/PS_y/speed

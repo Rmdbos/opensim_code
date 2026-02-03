@@ -1,0 +1,16 @@
+_states
+version=1
+nRows=2
+nColumns=7
+inDegrees=yes
+
+# SIMM Motion File Header:
+name _states
+datacolumns 7
+datarows 2
+otherdata 1
+range 0.030000 9.990000
+endheader
+time	/jointset/pin/rot_coord_0/value	/jointset/pin/rot_coord_0/speed	/forceset/muscle1/activation	/forceset/muscle1/fiber_length	/forceset/muscle2/activation	/forceset/muscle2/fiber_length
+      0.03000000	     30.00000000	     -0.00000000	      0.02000000	      0.45356132	      0.54113865	      0.19050656
+      9.99000000	     29.99943136	      0.01851631	      0.02000000	      0.45355923	      0.54523676	      0.19050706

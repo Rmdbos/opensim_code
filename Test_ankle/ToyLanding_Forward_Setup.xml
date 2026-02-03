@@ -1,0 +1,33 @@
+<OpenSimDocument Version="20302"> 
+<ForwardTool name="ToyLandingModel"> 
+ 
+   
+  <model_file>ToyLandingModel_scaled.osim</model_file> 
+  
+	<replace_force_set>false</replace_force_set>
+ 
+   
+  <initial_time> 0.00 </initial_time> 
+  
+	<final_time>0.40000000000000002</final_time>
+  
+	<solve_for_equilibrium_for_auxiliary_states>true</solve_for_equilibrium_for_auxiliary_states>
+ 
+   
+  <maximum_number_of_integrator_steps> 20000 </maximum_number_of_integrator_steps> 
+  <maximum_integrator_step_size> 1 </maximum_integrator_step_size> 
+  <minimum_integrator_step_size> 1e-8 </minimum_integrator_step_size>
+  <integrator_error_tolerance> 1e-005 </integrator_error_tolerance> 
+  <use_specified_dt> false </use_specified_dt> 
+ 
+   
+  <results_directory> ./ResultsForward </results_directory> 
+  <output_precision> 8 </output_precision> 
+  
+ 
+   
+  <external_loads_file> ToyLandingModel_forces.xml</external_loads_file> 
+  
+  
+</ForwardTool> 
+</OpenSimDocument>
