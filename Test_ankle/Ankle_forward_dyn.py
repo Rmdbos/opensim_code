@@ -13,11 +13,11 @@ import numpy as np
 
 
 #load opensim model
-toylanding = osim.Model("ToyLandingModel.osim")
+toylanding = osim.Model("Test_ankle\ToyLandingModel.osim")
 
 #scale model using preprepard scaling file
 def scale_model():
-    scale_tool = osim.ScaleTool("ToyLanding_Setup_Scale.xml")
+    scale_tool = osim.ScaleTool("Test_ankle\ToyLanding_Setup_Scale.xml")
     scale_tool.run()
 
 #function to run forward simulation on a model and which controllers to use
@@ -30,43 +30,43 @@ def run_sim(Model, reflexes, cocontraction):
             
         if controller.getName() == "R-inverter-controls" or controller.getName() == "R-everter-controls":
             controller.set_enabled(cocontraction)
-    Model.printToXML(str(Model.getName()) + ".osim")
+    Model.printToXML(r'Test_ankle'"\\" + str(Model.getName()) + ".osim")
 
     #setup xml file
-    tree = ET.parse('ToyLanding_Forward_Setup.xml')
+    tree = ET.parse('Test_ankle\ToyLanding_Forward_Setup.xml')
     
     root = tree.getroot()
     root[0][0].text = str(Model.getName())+ ".osim"
 
     final_file = ET.tostring(root)
-    with open("ToyLanding_Forward_Setup.xml", "wb") as f:
+    with open("Test_ankle\ToyLanding_Forward_Setup.xml", "wb") as f:
         f.write(final_file)
 
   
 
     #Make a manager that does the simulation
-    manager = osim.ForwardTool("ToyLanding_Forward_Setup.xml")
+    manager = osim.ForwardTool("Test_ankle\ToyLanding_Forward_Setup.xml")
     manager.run()
 
     #get data found in python simulation
-    Table_python = osim.TimeSeriesTable('ResultsForward\ToyLandingModel_states_degrees.mot')
+    Table_python = osim.TimeSeriesTable('Test_ankle\ResultsForward\ToyLandingModel_states_degrees.mot')
 
     #get reference data from simulation performed in OpenSimGUI
     #select the right one based on which controllers are activated
     if reflexes == False:
         if cocontraction == False:
-            Table_simref = osim.TimeSeriesTable('Simulate_VS_Forward_dynamics\Simulate_no_controller.mot')
-            Table_Forwardref = osim.TimeSeriesTable('Simulate_VS_Forward_dynamics\Forward_dynamics_no_controller.mot')
+            Table_simref = osim.TimeSeriesTable('Test_ankle\Simulate_VS_Forward_dynamics\Simulate_no_controller.mot')
+            Table_Forwardref = osim.TimeSeriesTable('Test_ankle\Simulate_VS_Forward_dynamics\Forward_dynamics_no_controller.mot')
         else:
-            Table_simref = osim.TimeSeriesTable('Simulate_VS_Forward_dynamics\Simulate_cocontraction.mot')
-            Table_Forwardref = osim.TimeSeriesTable('Simulate_VS_Forward_dynamics\Forward_dynamics_cocontraction.mot')
+            Table_simref = osim.TimeSeriesTable('Test_ankle\Simulate_VS_Forward_dynamics\Simulate_cocontraction.mot')
+            Table_Forwardref = osim.TimeSeriesTable('Test_ankle\Simulate_VS_Forward_dynamics\Forward_dynamics_cocontraction.mot')
     else:
         if cocontraction == False:
-            Table_simref = osim.TimeSeriesTable('Simulate_VS_Forward_dynamics\Simulate_reflexes.mot')
-            Table_Forwardref = osim.TimeSeriesTable('Simulate_VS_Forward_dynamics\Forward_dynamics_reflexes.mot')
+            Table_simref = osim.TimeSeriesTable('Test_ankle\Simulate_VS_Forward_dynamics\Simulate_reflexes.mot')
+            Table_Forwardref = osim.TimeSeriesTable('Test_ankle\Simulate_VS_Forward_dynamics\Forward_dynamics_reflexes.mot')
         else:
-            Table_simref = osim.TimeSeriesTable('Simulate_VS_Forward_dynamics\Simulate_all_controllers.mot')
-            Table_Forwardref = osim.TimeSeriesTable('Simulate_VS_Forward_dynamics\Forward_dynamics_all_controllers.mot')
+            Table_simref = osim.TimeSeriesTable('Test_ankle\Simulate_VS_Forward_dynamics\Simulate_all_controllers.mot')
+            Table_Forwardref = osim.TimeSeriesTable('Test_ankle\Simulate_VS_Forward_dynamics\Forward_dynamics_all_controllers.mot')
             
 
     # Get columns we want to analyze, and the time column (independent column).
@@ -92,7 +92,7 @@ def run_sim(Model, reflexes, cocontraction):
 scale_model()
 
 #load opensim model
-toylanding_scaled = osim.Model("ToyLandingModel_scaled.osim")
+toylanding_scaled = osim.Model("Test_ankle\ToyLandingModel_scaled.osim")
     
 #call function for different combinations of controllers
 run_sim(toylanding_scaled,False,False)
@@ -105,13 +105,13 @@ run_sim(toylanding_scaled,True,True)
 calcn_r = toylanding.get_BodySet().get("calcn_r")
 
 #retreive data from states file
-storage = osim.Storage("ResultsForward\ToyLandingModel_states.sto")
+storage = osim.Storage("Test_ankle\ResultsForward\ToyLandingModel_states.sto")
 state = toylanding.initSystem()
 state_names = storage.getColumnLabels()
 n_states = state_names.getSize()
 sto_state = osim.ArrayDouble()
 sto_state.setSize(n_states)
-IK = osim.TimeSeriesTable('ResultsForward\ToyLandingModel_states.sto')
+IK = osim.TimeSeriesTable('Test_ankle\ResultsForward\ToyLandingModel_states.sto')
 #initialise states list
 position = []
 #loop over all times in states file
