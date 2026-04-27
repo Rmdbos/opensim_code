@@ -1,0 +1,26 @@
+<OpenSimDocument Version="20302">
+	<ExternalLoads name="Ex2">
+		<objects>
+			<ExternalForce name="right">
+				<isDisabled> false </isDisabled>
+				
+				<applied_to_body>hand</applied_to_body>
+				
+				<force_expressed_in_body> ground </force_expressed_in_body>
+				
+				<point_expressed_in_body>hand</point_expressed_in_body>
+				
+				<force_identifier> force_v </force_identifier>
+				
+				<point_identifier> force_p </point_identifier>
+				
+				<torque_identifier> torque_ </torque_identifier>
+				
+				<data_source_name> Unassigned </data_source_name>
+			</ExternalForce>
+		</objects>
+		<groups />
+		
+		<datafile>Force_files\Force_ID.mot</datafile>
+</ExternalLoads>
+</OpenSimDocument>

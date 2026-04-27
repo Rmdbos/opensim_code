@@ -1,0 +1,17 @@
+ModelForces
+version=1
+nRows=2
+nColumns=8
+inDegrees=no
+
+This file contains the forces exerted on a model during a simulation.
+
+A force is a generalized force, meaning that it can be either a force (N) or a torque (Nm).
+
+Units are S.I. units (second, meters, Newtons, ...)
+If the header above contains a line with 'inDegrees', this indicates whether rotational values are in degrees (yes) or radians (no).
+
+endheader
+time	elv_angle_reserve	shoulder_elv_reserve	shoulder_rot_reserve	elbow_flexion_reserve	pro_sup_reserve	deviation_reserve	flexion_reserve
+      0.00000000000000000000	      1.66802611868151040575	      2.83945473413869464707	     -1.63122893156228343514	      2.87051861862943447079	     -0.12932655454363806147	     -0.24935797835328080141	     -0.10703438540116561040
+      0.01000000000000000021	      1.66802611868633032799	      2.83945473413674509544	     -1.63122893156221104860	      2.87051861862885226984	     -0.12932655454362146363	     -0.24935797835322365268	     -0.10703438540116844147

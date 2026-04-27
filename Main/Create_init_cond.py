@@ -8,7 +8,7 @@ sys.path.insert(0, "Functions")
 import Generate_initial_conditions as ic
 
 # Initiate object with all necessary information
-initcond_file = ic.generate_init_cond(r"Main\Set-up\DAS3", r"Main\Set-up\DAS3\CMC\Results\DAS3_CMCed_states.sto", "testing_10_90")
+initcond_file = ic.generate_init_cond(r"Main\Set-up\Moblarms", r"Main\Set-up\Moblarms\Right_states.sto", "test")
 
 
 # Generate the initial condition file

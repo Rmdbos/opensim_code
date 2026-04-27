@@ -1,0 +1,17 @@
+ModelForces
+version=1
+nRows=2
+nColumns=17
+inDegrees=no
+
+This file contains the forces exerted on a model during a simulation.
+
+A force is a generalized force, meaning that it can be either a force (N) or a torque (Nm).
+
+Units are S.I. units (second, meters, Newtons, ...)
+If the header above contains a line with 'inDegrees', this indicates whether rotational values are in degrees (yes) or radians (no).
+
+endheader
+time	elv_angle_reserve	shoulder_elv_reserve	shoulder_rot_reserve	elbow_flexion_reserve	pro_sup_reserve	deviation_reserve	flexion_reserve	hand_right_Fx	hand_right_Fy	hand_right_Fz	hand_right_px	hand_right_py	hand_right_pz	hand_right_Tx	hand_right_Ty	hand_right_Tz
+      0.00000000	      2.74091238	      5.95552164	     -2.80942157	      1.89508190	     -0.15532714	     -0.17521860	     -0.18799612	      0.00000000	      0.00000000	     -0.20000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000
+      0.01000000	      2.74091238	      5.95552165	     -2.80942157	      1.89508190	     -0.15532714	     -0.17521860	     -0.18799612	      0.00000000	      0.00000000	     -0.20000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000

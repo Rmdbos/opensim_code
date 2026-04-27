@@ -1,0 +1,11 @@
+Static Optimization
+version=1
+nRows=2
+nColumns=8
+inDegrees=no
+This file contains static optimization results.
+
+endheader
+time	elv_angle_reserve	shoulder_elv_reserve	shoulder_rot_reserve	elbow_flexion_reserve	pro_sup_reserve	deviation_reserve	flexion_reserve
+      0.00000000	      0.27457685	      0.59726795	     -0.28274563	      0.18744331	     -0.01562230	     -0.01737108	     -0.01884998
+      0.01000000	      0.27457685	      0.59726795	     -0.28274563	      0.18744331	     -0.01562230	     -0.01737108	     -0.01884998
