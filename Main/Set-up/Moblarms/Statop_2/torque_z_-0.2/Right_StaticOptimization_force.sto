@@ -1,0 +1,17 @@
+ModelForces
+version=1
+nRows=2
+nColumns=30
+inDegrees=no
+
+This file contains the forces exerted on a model during a simulation.
+
+A force is a generalized force, meaning that it can be either a force (N) or a torque (Nm).
+
+Units are S.I. units (second, meters, Newtons, ...)
+If the header above contains a line with 'inDegrees', this indicates whether rotational values are in degrees (yes) or radians (no).
+
+endheader
+time	sternoclavicular_r2_reserve	sternoclavicular_r3_reserve	unrotscap_r3_reserve	unrotscap_r2_reserve	acromioclavicular_r2_reserve	acromioclavicular_r3_reserve	acromioclavicular_r1_reserve	unrothum_r1_reserve	unrothum_r3_reserve	unrothum_r2_reserve	elv_angle_reserve	shoulder_elv_reserve	shoulder1_r2_reserve	shoulder_rot_reserve	elbow_flexion_reserve	pro_sup_reserve	deviation_reserve	flexion_reserve	wrist_hand_r1_reserve	wrist_hand_r3_reserve	hand_right_Fx	hand_right_Fy	hand_right_Fz	hand_right_px	hand_right_py	hand_right_pz	hand_right_Tx	hand_right_Ty	hand_right_Tz
+      0.00000000	     -0.43389329	      0.18377672	     -0.18377672	      0.43389329	     -0.08785457	      0.71000969	      0.31914447	     -0.31914447	     -0.71000969	      0.08785457	      0.87722583	      1.79294346	     -0.87722583	     -1.70917447	      3.04584566	     -0.15798471	     -0.15615354	     -0.14699255	     -0.21192232	     -0.07349628	      0.00000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000	     -0.20000000
+      0.01000000	     -0.43389329	      0.18377672	     -0.18377672	      0.43389329	     -0.08785457	      0.71000969	      0.31914447	     -0.31914447	     -0.71000969	      0.08785457	      0.87722583	      1.79294346	     -0.87722583	     -1.70917447	      3.04584566	     -0.15798471	     -0.15615354	     -0.14699255	     -0.21192232	     -0.07349628	      0.00000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000	     -0.20000000

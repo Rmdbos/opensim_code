@@ -1,11 +1,11 @@
 Static Optimization
 version=1
 nRows=2
-nColumns=8
+nColumns=21
 inDegrees=no
 This file contains static optimization results.
 
 endheader
-time	elv_angle_reserve	shoulder_elv_reserve	shoulder_rot_reserve	elbow_flexion_reserve	pro_sup_reserve	deviation_reserve	flexion_reserve
-      0.00000000	      0.27409124	      0.59555216	     -0.28094216	      0.18950819	     -0.01553271	     -0.01752186	     -0.01879961
-      0.01000000	      0.27409124	      0.59555216	     -0.28094216	      0.18950819	     -0.01553271	     -0.01752186	     -0.01879961
+time	sternoclavicular_r2_reserve	sternoclavicular_r3_reserve	unrotscap_r3_reserve	unrotscap_r2_reserve	acromioclavicular_r2_reserve	acromioclavicular_r3_reserve	acromioclavicular_r1_reserve	unrothum_r1_reserve	unrothum_r3_reserve	unrothum_r2_reserve	elv_angle_reserve	shoulder_elv_reserve	shoulder1_r2_reserve	shoulder_rot_reserve	elbow_flexion_reserve	pro_sup_reserve	deviation_reserve	flexion_reserve	wrist_hand_r1_reserve	wrist_hand_r3_reserve
+      0.00000000	     -0.04585918	      0.01942378	     -0.01942378	      0.04585918	     -0.00928555	      0.07504256	      0.03373111	     -0.03373111	     -0.07504256	      0.00928555	      0.08392794	      0.18950033	     -0.08392794	     -0.16798645	      0.28445407	     -0.01321342	     -0.00866639	     -0.00866435	     -0.01176152	     -0.00433217
+      0.01000000	     -0.04585918	      0.01942378	     -0.01942378	      0.04585918	     -0.00928555	      0.07504256	      0.03373111	     -0.03373111	     -0.07504256	      0.00928555	      0.08392794	      0.18950033	     -0.08392794	     -0.16798645	      0.28445407	     -0.01321342	     -0.00866639	     -0.00866435	     -0.01176152	     -0.00433217

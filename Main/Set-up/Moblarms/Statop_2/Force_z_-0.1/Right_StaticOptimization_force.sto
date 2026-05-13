@@ -1,7 +1,7 @@
 ModelForces
 version=1
 nRows=2
-nColumns=17
+nColumns=30
 inDegrees=no
 
 This file contains the forces exerted on a model during a simulation.
@@ -12,6 +12,6 @@ Units are S.I. units (second, meters, Newtons, ...)
 If the header above contains a line with 'inDegrees', this indicates whether rotational values are in degrees (yes) or radians (no).
 
 endheader
-time	elv_angle_reserve	shoulder_elv_reserve	shoulder_rot_reserve	elbow_flexion_reserve	pro_sup_reserve	deviation_reserve	flexion_reserve	hand_right_Fx	hand_right_Fy	hand_right_Fz	hand_right_px	hand_right_py	hand_right_pz	hand_right_Tx	hand_right_Ty	hand_right_Tz
-      0.00000000	      2.73605629	      5.93836379	     -2.79138680	      1.91573068	     -0.15443131	     -0.17672637	     -0.18749246	      0.00000000	      0.00000000	     -0.10000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000
-      0.01000000	      2.73605629	      5.93836380	     -2.79138680	      1.91573067	     -0.15443131	     -0.17672637	     -0.18749246	      0.00000000	      0.00000000	     -0.10000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000
+time	sternoclavicular_r2_reserve	sternoclavicular_r3_reserve	unrotscap_r3_reserve	unrotscap_r2_reserve	acromioclavicular_r2_reserve	acromioclavicular_r3_reserve	acromioclavicular_r1_reserve	unrothum_r1_reserve	unrothum_r3_reserve	unrothum_r2_reserve	elv_angle_reserve	shoulder_elv_reserve	shoulder1_r2_reserve	shoulder_rot_reserve	elbow_flexion_reserve	pro_sup_reserve	deviation_reserve	flexion_reserve	wrist_hand_r1_reserve	wrist_hand_r3_reserve	hand_right_Fx	hand_right_Fy	hand_right_Fz	hand_right_px	hand_right_py	hand_right_pz	hand_right_Tx	hand_right_Ty	hand_right_Tz
+      0.00000000	     -0.45533986	      0.19286047	     -0.19286047	      0.45533986	     -0.09219706	      0.74510420	      0.33491921	     -0.33491921	     -0.74510420	      0.09219706	      0.83664622	      1.88156543	     -0.83664622	     -1.65554670	      2.85752968	     -0.13073037	     -0.08720474	     -0.08613549	     -0.11834910	     -0.04306775	      0.00000000	      0.00000000	     -0.10000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000
+      0.01000000	     -0.45533986	      0.19286047	     -0.19286047	      0.45533986	     -0.09219706	      0.74510420	      0.33491921	     -0.33491921	     -0.74510420	      0.09219706	      0.83664622	      1.88156543	     -0.83664622	     -1.65554670	      2.85752968	     -0.13073037	     -0.08720474	     -0.08613549	     -0.11834910	     -0.04306775	      0.00000000	      0.00000000	     -0.10000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000
