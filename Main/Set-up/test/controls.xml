@@ -12,11 +12,11 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0</t>
-						<value>0.020183096080496128</value>
+						<value>0.3081276811298416</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1</t>
-						<value>0.020183096080496128</value>
+						<value>0.3081276811298416</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes>
@@ -43,6 +43,86 @@
 				<kv>20</kv>
 			</ControlLinear>
 			<ControlLinear name="muscle2">
+				<is_model_control>true</is_model_control>
+				<extrapolate>true</extrapolate>
+				<default_min>0.02</default_min>
+				<default_max>1</default_max>
+				<filter_on>false</filter_on>
+				<use_steps>false</use_steps>
+				<x_nodes>
+					<ControlLinearNode>
+						<t>0</t>
+						<value>0.020000000000000004</value>
+					</ControlLinearNode>
+					<ControlLinearNode>
+						<t>1</t>
+						<value>0.020000000000000004</value>
+					</ControlLinearNode>
+				</x_nodes>
+				<min_nodes>
+					<ControlLinearNode>
+						<t>0</t>
+						<value>0</value>
+					</ControlLinearNode>
+					<ControlLinearNode>
+						<t>1</t>
+						<value>0</value>
+					</ControlLinearNode>
+				</min_nodes>
+				<max_nodes>
+					<ControlLinearNode>
+						<t>0</t>
+						<value>1</value>
+					</ControlLinearNode>
+					<ControlLinearNode>
+						<t>1</t>
+						<value>1</value>
+					</ControlLinearNode>
+				</max_nodes>
+				<kp>100</kp>
+				<kv>20</kv>
+			</ControlLinear>
+			<ControlLinear name="muscle3">
+				<is_model_control>true</is_model_control>
+				<extrapolate>true</extrapolate>
+				<default_min>0.02</default_min>
+				<default_max>1</default_max>
+				<filter_on>false</filter_on>
+				<use_steps>false</use_steps>
+				<x_nodes>
+					<ControlLinearNode>
+						<t>0</t>
+						<value>0.020000000000000004</value>
+					</ControlLinearNode>
+					<ControlLinearNode>
+						<t>1</t>
+						<value>0.020000000000000004</value>
+					</ControlLinearNode>
+				</x_nodes>
+				<min_nodes>
+					<ControlLinearNode>
+						<t>0</t>
+						<value>0</value>
+					</ControlLinearNode>
+					<ControlLinearNode>
+						<t>1</t>
+						<value>0</value>
+					</ControlLinearNode>
+				</min_nodes>
+				<max_nodes>
+					<ControlLinearNode>
+						<t>0</t>
+						<value>1</value>
+					</ControlLinearNode>
+					<ControlLinearNode>
+						<t>1</t>
+						<value>1</value>
+					</ControlLinearNode>
+				</max_nodes>
+				<kp>100</kp>
+				<kv>20</kv>
+			</ControlLinear>
+			<ControlLinear name="muscle4">
 				<is_model_control>true</is_model_control>
 				<extrapolate>true</extrapolate>
 				<default_min>0.02</default_min>

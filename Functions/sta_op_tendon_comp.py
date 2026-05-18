@@ -36,13 +36,13 @@ def find_activations(model,state):
 
     # Initialise empty contraint matrix
     constraint = []
-    set = osim.ControlSet(r"Main\Set-up\Moblarms\Stat_op\stat_op_moments_StaticOptimization_controls.xml")
+    set = osim.ControlSet(r"Main\Set-up\test\statop\stat_op_moments_StaticOptimization_controls.xml")
     # Initialise j to 0 and loop over all coordinates
     j = 0
     for coordinate in model.getCoordinateSet():
         # Get the moment on the coordinate
         name = coordinate.getName()
-        if name == "elv_angle" or name == "shoulder_elv" or name == "shoulder_rot" or name == "elbow_flexion" or name == "pro_sup" or name == "deviation" or name == "flexion":
+        if name == "rot_coord_0":
         #     tableTime = osim.TimeSeriesTable(r'Main\Set-up\Moblarms\inverse_dynamics\Force_0.sto')
         #     try:
         #         moment = tableTime.getDependentColumn(name + "_moment")[0]
@@ -71,6 +71,7 @@ def find_activations(model,state):
                 moment_musc += arm*force
                 # Add one to i
                 i += 1
+                
             # Add new constrain that equalises the moment found using ID to the moments in the muscle
             constraint.append(moment == moment_musc)
         else:

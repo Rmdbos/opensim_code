@@ -32,9 +32,16 @@ model.equilibrateMuscles(s)
 # model: the model for which to calculate the H matrix. Type: OpenSim model
 # state: state of the model for which the H matrix needs to be calculated. Type: OpenSim state
 def calc_H_test(model,state):
+    
 
     # Initialise a solver that finds the muscle moment arms
     solver = osim.MomentArmSolver(model)
+
+
+    gravity = model.getGravity()
+    # print(gravity)
+    gravnew = osim.Vec3([0,0,0])
+    model.setGravity(gravnew)
 
     # Get the number of muscles and number of coordinates in the model
     num_musc = model.getNumMuscleStates()/2
@@ -97,7 +104,7 @@ def calc_H_test(model,state):
         magnitude = mag[i]
         
         # Use force setup class to create a forcefile for the inverse dynamics
-        forcefile = fs.force_setup_file(direction, magnitude, "Force_ID", r"Main\Set-up\test", "arm", "model")
+        forcefile = fs.force_setup_file(direction, magnitude, "Force_ID", r"Main\Set-up\test", "arm2", "model",[1,0,0],0)
         forcefile.generate_force_file()
         forcefile.generate_force_setup()
 
@@ -121,7 +128,7 @@ def calc_H_test(model,state):
         magnitude = mag[i]
 
         # Use force setup class to create a forcefile for the inverse dynamics
-        forcefile = fs.force_setup_file(direction, magnitude, "Force_ID", r"Main\Set-up\test", "arm", "model")
+        forcefile = fs.force_setup_file(direction, magnitude, "Force_ID", r"Main\Set-up\test", "arm2", "model", [1,0,0],0)
         forcefile.generate_force_file()
         forcefile.generate_force_setup()
 
@@ -147,82 +154,89 @@ def calc_H_test(model,state):
         for j in range(6):
             k = 1 + j + 6*i
             forces[k,i] = -mag[j]
+    print(forces)
 
     # Initialise empty matrix with the moments for linear regression
-    moments = np.zeros(13)
+    moments = np.zeros((13,num_coord))
 
     # Loop over matrix columns and assign correct moment to each
-    for i in range(13):
-        if i == 0:
-            tableTime = osim.TimeSeriesTable(r'Main\Set-up\test\inverse_dynamics\Force_0.sto')
-            moment = tableTime.getDependentColumn("rot_coord_0_moment")
-            moments[i] = moment.to_numpy()[1]
-        if i > 0 and i <=6:
-            tableTime = osim.TimeSeriesTable(r'Main\Set-up\test\inverse_dynamics\Force_x_' + str(mag[i-1]) + '.sto')
-            moment = tableTime.getDependentColumn("rot_coord_0_moment")
-            moments[i] = moment.to_numpy()[1]
-        if i > 6:
-            tableTime = osim.TimeSeriesTable(r'Main\Set-up\test\inverse_dynamics\Force_z_' + str(mag[i-7]) + '.sto')
-            moment = tableTime.getDependentColumn("rot_coord_0_moment")
-            moments[i] = moment.to_numpy()[1]
-
+    j = 0
+    for coordinate in model.getCoordinateSet():
+        # Get coordinate name
+        name = coordinate.getName()
+        for i in range(13):
+            if i == 0:
+                tableTime = osim.TimeSeriesTable(r'Main\Set-up\test\inverse_dynamics\Force_0.sto')
+                moment = tableTime.getDependentColumn(name + "_moment")
+                moments[i,j] = moment.to_numpy()[1]
+            if i > 0 and i <=6:
+                tableTime = osim.TimeSeriesTable(r'Main\Set-up\test\inverse_dynamics\Force_x_' + str(mag[i-1]) + '.sto')
+                moment = tableTime.getDependentColumn(name + "_moment")
+                moments[i,j] = moment.to_numpy()[1]
+            if i > 6:
+                tableTime = osim.TimeSeriesTable(r'Main\Set-up\test\inverse_dynamics\Force_z_' + str(mag[i-7]) + '.sto')
+                moment = tableTime.getDependentColumn(name + "_moment")
+                moments[i,j] = moment.to_numpy()[1]
+        j += 1
+    print(moments)
 
     # Initialise linear regression and fit to find J
-    model = LinearRegression(fit_intercept=False)
-    model.fit(forces, moments)
+    model2 = LinearRegression(fit_intercept=False)
+    model2.fit(forces, moments)
 
     # Get J from the linear regression
-    J = model.coef_.reshape((1,-1))
+    J = model2.coef_
 
     # Take the pseudoinverse of J
     J_inv = np.linalg.pinv(J)
     
+    
     # Calculate H by multiplying J, M, and Fmax
     H = np.matmul(J_inv,np.matmul(M,Fmax))
 
-    
+    model.setGravity(gravity)
     # Return H
     return H
 
-# Calculate H for position 1
-H1 = calc_H_test(model,s)
+# # Calculate H for position 1
+# H1 = calc_H_test(model,s)
 
 
-# Create deflected position
-model2 = osim.Model(r"Main\Set-up\test\test_simple.osim")
+# # Create deflected position
+# model2 = osim.Model(r"Main\Set-up\test\test_simple.osim")
 
-s2 = model2.initSystem()
+# s2 = model2.initSystem()
 
-coord = model2.getCoordinateSet()
-coor = coord.get(0)
+# coord = model2.getCoordinateSet()
+# coor = coord.get(0)
 
-coor.setValue(s2,1/180*np.pi)
-model2.equilibrateMuscles(s2)
+# coor.setValue(s2,1/180*np.pi)
+# model2.equilibrateMuscles(s2)
 
-# Calculate H for deflected position
-H2 = calc_H_test(model2,s2)
+# # Calculate H for deflected position
+# H2 = calc_H_test(model2,s2)
 
-print(s.getY())
-print(s2.getY())
-print(H1)
-print(H2)
+# print(s.getY())
+# print(s2.getY())
+# print(H1)
+# print(H2)
 
-# Initialise the activation vector
-activations = np.array([1,0,0])
-print(activations)
+# # Initialise the activation vector
+# activations = np.array([1,0,0])
+# print(activations)
 
-# Get forces for both positions
-forces1 = np.matmul(H1,activations)
-forces2 = np.matmul(H2,activations)
+# # Get forces for both positions
+# forces1 = np.matmul(H1,activations)
+# forces2 = np.matmul(H2,activations)
 
-# Calculate deflection
-deflection = -1/180*np.pi * -0.5
+# # Calculate deflection
+# deflection = -1/180*np.pi * -0.5
 
 
 
-print(forces1)
-print(forces2)
+# print(forces1)
+# print(forces2)
 
-# Calculate stiffness
-stiffness = -(forces2-forces1)[0]/deflection
-print(stiffness)
+# # Calculate stiffness
+# stiffness = -(forces2-forces1)[0]/deflection
+# print(stiffness)
