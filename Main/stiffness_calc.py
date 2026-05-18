@@ -16,7 +16,7 @@ import Generate_force_files as fs
 import Generate_stationary_kinematics_MOBL as sk
 import sta_op_tendon_comp as so
 import Static_op_moments as st
-import stiffness_MoBL_ARMS_copywithtorque as ma
+import stiffness_MoBL_ARMS as ma
 np.set_printoptions(threshold=sys.maxsize)
 
 
@@ -87,13 +87,13 @@ for ac in activation:
 
 
 
-H_1, H_2 = ma.calc_H_Mobl(model,state)
+H_1 = ma.calc_H_Mobl(model,state)
 F_1 = np.matmul(H_1,activations)
-T_1 = np.matmul(H_2,activations)
+# T_1 = np.matmul(H_2,activations)
 
 
 print(F_1)
-print(T_1)
+# print(T_1)
 
 # body_interest = model.get_BodySet().get("hand")
 # point_1 = body_interest.getPositionInGround(state)

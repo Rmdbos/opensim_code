@@ -32,6 +32,10 @@ def calc_H_Mobl(model,state):
     # Initialise a solver that finds the muscle moment arms
     solver = osim.MomentArmSolver(model)
 
+    # gravity = model.getGravity()
+    # gravnew = osim.Vec3([0,0,0])
+    # model.setGravity(gravnew)
+
     # Get the number of muscles and number of coordinates in the model
     num_musc = round(model.getNumMuscleStates()/2)
     num_coord = model.getNumCoordinates()
@@ -99,7 +103,7 @@ def calc_H_Mobl(model,state):
         magnitude = mag[i]
         
         # Use force setup class to create a forcefile for the inverse dynamics
-        forcefile = fs.force_setup_file(direction, magnitude, "Force_ID", r"Main\Set-up\Moblarms", "hand", "Right")
+        forcefile = fs.force_setup_file(direction, magnitude, "Force_ID", r"Main\Set-up\Moblarms", "hand", "Right",[1,0,0],0)
         forcefile.generate_force_file()
         forcefile.generate_force_setup()
 
@@ -124,7 +128,7 @@ def calc_H_Mobl(model,state):
         magnitude = mag[i]
 
         # Use force setup class to create a forcefile for the inverse dynamics
-        forcefile = fs.force_setup_file(direction, magnitude, "Force_ID", r"Main\Set-up\Moblarms", "hand", "Right")
+        forcefile = fs.force_setup_file(direction, magnitude, "Force_ID", r"Main\Set-up\Moblarms", "hand", "Right",[1,0,0],0)
         forcefile.generate_force_file()
         forcefile.generate_force_setup()
 
@@ -147,7 +151,7 @@ def calc_H_Mobl(model,state):
         magnitude = mag[i]
 
         # Use force setup class to create a forcefile for the inverse dynamics
-        forcefile = fs.force_setup_file(direction, magnitude, "Force_ID", r"Main\Set-up\Moblarms", "hand", "Right")
+        forcefile = fs.force_setup_file(direction, magnitude, "Force_ID", r"Main\Set-up\Moblarms", "hand", "Right",[1,0,0],0)
         forcefile.generate_force_file()
         forcefile.generate_force_setup()
 
@@ -223,14 +227,15 @@ def calc_H_Mobl(model,state):
 
     # Get J from the linear regression
     J = Jmodel.coef_
-
+    print(model.getGravity())
+    print(J)
     # Take the pseudoinverse of J
     J_inv = np.linalg.pinv(J)
 
     # Calculate H by multiplying J, M, and Fmax
     H = np.matmul(J_inv,np.matmul(M,Fmax))
     # H = np.matmul(M,Fmax)
-    
+    # model.setGravity(gravity)
     # Return H
     return H
 
