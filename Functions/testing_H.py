@@ -50,6 +50,7 @@ def calc_H_test(model,state):
     # Initialise empty Fmax and M matrices
     Fmax = np.zeros((int(num_musc),int(num_musc+1)))
     M = np.empty((num_coord,int(num_musc)))
+
     
     # Initialise i to 0 and loop over all coordinates
     i = 0
@@ -57,10 +58,12 @@ def calc_H_test(model,state):
         # Initialise j to 0 and loop over all muscles
         j = 0
         for muscle in model.getMuscles():
+
+            cospen = muscle.getCosPennationAngle(state)
             # Calculate maximum active fiber force at given fiber length
-            force_active = muscle.getActiveFiberForce(state)/0.05
+            force_active = muscle.getActiveFiberForce(state)/muscle.getActivation(state)*cospen
             # Calculate passive fiber force at given length
-            force_passive = muscle.getPassiveFiberForce(state)
+            force_passive = muscle.getPassiveFiberForce(state)*cospen
             # Calculate muscle moment arm relative to coordinate
             path = muscle.getGeometryPath()
             arm = solver.solve(state,coordinate,path)
@@ -68,33 +71,22 @@ def calc_H_test(model,state):
             Fmax[j,j+1] = force_active
             Fmax[j,0] = force_passive
             M[i,j] = arm
+    
             # Add one to both i and j
             j += 1
-        i += i
-
+        i += 1
     # Calculate coordinate angles in degrees
     angle_degrees = round(state.getY()[0]*180/np.pi,1)
     # Create object using the create static kinematics file class, given angles for the joints and a path to the setup directory
     position_file = sk.stat_kine_file(angle_degrees,r'Main\Set-up\test')
 
-    
-    # Write the initial position and stationary kinematics file
-    position_file.stat_kine_file()
-
     # Perform inverse dynamics without muscle forces for 0 force condition
-    ID = osim.InverseDynamicsTool()
-    ID.set_results_directory(r"Main\Set-up\test\inverse_dynamics")
-    ID.setCoordinatesFileName(r"Main\Set-up\test\Stationary_kinematics\test_static_kinematics_ID_angle_" + str(angle_degrees) + ".mot")
-    ID.setModel(model)
-    muscles = osim.ArrayStr()
-    muscles.append('Muscles')
-    ID.setExcludedForces(muscles)
-    ID.setStartTime(0)
-    ID.setEndTime(0.01)
-    ID.setOutputGenForceFileName("Force_0.sto")
-    ID.run()
-    
-    
+    statop = osim.AnalyzeTool(r"Main\Set-up\test\stat_op_setup.xml")
+    statop.setCoordinatesFileName(r"Stationary_kinematics\test_static_kinematics_ID_angle_0.mot")
+    statop.setResultsDir("Statop_2\Force_0")
+    # statop.setModel(model)
+    statop.run()
+
     # Initialise list with different force magnitudes
     mag = [-0.3,-0.2,-0.1,0.1,0.2,0.3]
 
@@ -103,47 +95,44 @@ def calc_H_test(model,state):
         direction = [1,0,0]
         magnitude = mag[i]
         
-        # Use force setup class to create a forcefile for the inverse dynamics
         forcefile = fs.force_setup_file(direction, magnitude, "Force_ID", r"Main\Set-up\test", "arm2", "model",[1,0,0],0)
         forcefile.generate_force_file()
         forcefile.generate_force_setup()
 
-        ID = osim.InverseDynamicsTool()
-        ID.set_results_directory(r"Main\Set-up\test\inverse_dynamics")
-        ID.setCoordinatesFileName(r"Main\Set-up\test\Stationary_kinematics\test_static_kinematics_ID_angle_" + str(angle_degrees) + ".mot")
-        ID.setExternalLoadsFileName(r"Main\Set-up\test\Forward_dynamics\model_forces.xml")
-        ID.setModel(model)
-        muscles = osim.ArrayStr()
-        muscles.append('Muscles')
-        ID.setExcludedForces(muscles)
-        ID.setStartTime(0)
-        ID.setEndTime(0.01)
-        ID.setOutputGenForceFileName("Force_x_" + str(magnitude) +".sto")
-        ID.run()
 
+        statop = osim.AnalyzeTool(r"Main\Set-up\test\stat_op_setup.xml")
+        # statop.setModel(model)
+        statop.setCoordinatesFileName(r"Stationary_kinematics\test_static_kinematics_ID_angle_0.mot")
+        statop.setResultsDir("Statop_2\Force_x_" + str(magnitude))
+        statop.setExternalLoadsFileName("Forward_dynamics\model_forces.xml")
+        
+        
+        statop.run()
+        
 
-    # Loop over all force magnitudes and apply them to the model in and inverse dynamics simulation in the z direction
+    
+    # Loop over all force magnitudes and apply them to the model in and inverse dynamics simulation in the x direction
     for i in range(6):
         direction = [0,0,1]
         magnitude = mag[i]
-
-        # Use force setup class to create a forcefile for the inverse dynamics
-        forcefile = fs.force_setup_file(direction, magnitude, "Force_ID", r"Main\Set-up\test", "arm2", "model", [1,0,0],0)
+        
+        forcefile = fs.force_setup_file(direction, magnitude, "Force_ID", r"Main\Set-up\test", "arm2", "model",[1,0,0],0)
         forcefile.generate_force_file()
         forcefile.generate_force_setup()
 
-        ID = osim.InverseDynamicsTool()
-        ID.set_results_directory(r"Main\Set-up\test\inverse_dynamics")
-        ID.setCoordinatesFileName(r"Main\Set-up\test\Stationary_kinematics\test_static_kinematics_ID_angle_" + str(angle_degrees) + ".mot")
-        ID.setExternalLoadsFileName(r"Main\Set-up\test\Forward_dynamics\model_forces.xml")
-        ID.setModel(model)
-        muscles = osim.ArrayStr()
-        muscles.append('Muscles')
-        ID.setExcludedForces(muscles)
-        ID.setStartTime(0)
-        ID.setEndTime(0.01)
-        ID.setOutputGenForceFileName("Force_z_" + str(magnitude) +".sto")
-        ID.run()
+
+        statop = osim.AnalyzeTool(r"Main\Set-up\test\stat_op_setup.xml")
+        statop.setCoordinatesFileName(r"Stationary_kinematics\test_static_kinematics_ID_angle_0.mot")
+        statop.setResultsDir("Statop_2\Force_z_" + str(magnitude))
+        statop.setExternalLoadsFileName("Forward_dynamics\model_forces.xml")
+        # statop.setModel(model)
+        
+        statop.run()
+
+    
+    
+   
+
 
 
     # Initialise matrix with forces for linear regression
@@ -154,7 +143,7 @@ def calc_H_test(model,state):
         for j in range(6):
             k = 1 + j + 6*i
             forces[k,i] = -mag[j]
-    print(forces)
+    
 
     # Initialise empty matrix with the moments for linear regression
     moments = np.zeros((13,num_coord))
@@ -164,39 +153,52 @@ def calc_H_test(model,state):
     for coordinate in model.getCoordinateSet():
         # Get coordinate name
         name = coordinate.getName()
+        # Loop over matrix columns and assign correct moment to each
         for i in range(13):
             if i == 0:
-                tableTime = osim.TimeSeriesTable(r'Main\Set-up\test\inverse_dynamics\Force_0.sto')
-                moment = tableTime.getDependentColumn(name + "_moment")
-                moments[i,j] = moment.to_numpy()[1]
-            if i > 0 and i <=6:
-                tableTime = osim.TimeSeriesTable(r'Main\Set-up\test\inverse_dynamics\Force_x_' + str(mag[i-1]) + '.sto')
-                moment = tableTime.getDependentColumn(name + "_moment")
-                moments[i,j] = moment.to_numpy()[1]
-            if i > 6:
-                tableTime = osim.TimeSeriesTable(r'Main\Set-up\test\inverse_dynamics\Force_z_' + str(mag[i-7]) + '.sto')
-                moment = tableTime.getDependentColumn(name + "_moment")
-                moments[i,j] = moment.to_numpy()[1]
-        j += 1
-    print(moments)
+                set = osim.ControlSet(r"Main\Set-up\test\Statop_2\Force_0\stat_op_moments_StaticOptimization_controls.xml")
 
+                control = set.get(name + "_reserve")
+                moment = control.getControlValue() * 10
+                moments[i,j] = moment
+            if i > 0 and i <=6:
+                set = osim.ControlSet(r"Main\Set-up\test\Statop_2\Force_x_" + str(mag[i-1]) + "\stat_op_moments_StaticOptimization_controls.xml")
+
+                control = set.get(name + "_reserve")
+                moment = control.getControlValue() * 10
+                
+                moments[i,j] = moment
+            if i > 6:
+                set = osim.ControlSet(r"Main\Set-up\test\Statop_2\Force_z_" + str(mag[i-7]) + "\stat_op_moments_StaticOptimization_controls.xml")
+
+                control = set.get(name + "_reserve")
+                moment = control.getControlValue() * 10
+                moments[i,j] = moment
+        # Add one to j
+        j += 1
+  
+    print(forces)
+    print(moments)
     # Initialise linear regression and fit to find J
     model2 = LinearRegression(fit_intercept=False)
     model2.fit(forces, moments)
 
     # Get J from the linear regression
     J = model2.coef_
-
+    print(model.getGravity())
     # Take the pseudoinverse of J
     J_inv = np.linalg.pinv(J)
-    
-    
+    print(Fmax)
+    print(M)
+    print(J)
+    print(J_inv)
     # Calculate H by multiplying J, M, and Fmax
     H = np.matmul(J_inv,np.matmul(M,Fmax))
+    test = np.matmul(M,Fmax)
 
     model.setGravity(gravity)
     # Return H
-    return H
+    return H, test
 
 # # Calculate H for position 1
 # H1 = calc_H_test(model,s)

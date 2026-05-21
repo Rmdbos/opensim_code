@@ -1,0 +1,11 @@
+Static Optimization
+version=1
+nRows=2
+nColumns=2
+inDegrees=no
+This file contains static optimization results.
+
+endheader
+time	rot_coord_0_reserve
+      0.00000000000000000000	      0.00000000000000000000
+      0.01000000000000000021	      0.00000000000000000000

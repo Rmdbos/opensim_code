@@ -16,7 +16,7 @@ import Generate_force_files as fs
 import Generate_stationary_kinematics_MOBL as sk
 import sta_op_tendon_comp as so
 import Static_op_moments as st
-import testing_H as ma
+import testing_H_copy2 as ma
 np.set_printoptions(threshold=sys.maxsize)
 
 
@@ -55,7 +55,7 @@ file_name = r"test_static_kinematics_ID_angle_0.mot"
 
 
 
-st.do_stat_op(r"Main\Set-up\test\statop\stat_op_setup.xml",file_name)
+st.do_stat_op(r"Main\Set-up\test\stat_op_setup2.xml",file_name)
 
 
 activation = so.loop_fibre_length(model,state)
@@ -88,12 +88,13 @@ for ac in activation:
 for i in range(len(activations)):
     print(activations[i])
 
-H_1 = ma.calc_H_test(model,state)
+H_1,test  = ma.calc_H_test(model,state)
 F_1 = np.matmul(H_1,activations)
-# T_1 = np.matmul(H_2,activations)
-
+## T_1 = np.matmul(H_2,activations)
+tester = np.matmul(test,activations)
 
 print(F_1)
+print(tester)
 # print(T_1)
 
 # # body_interest = model.get_BodySet().get("hand")

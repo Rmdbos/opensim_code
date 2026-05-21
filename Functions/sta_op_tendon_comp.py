@@ -36,7 +36,7 @@ def find_activations(model,state):
 
     # Initialise empty contraint matrix
     constraint = []
-    set = osim.ControlSet(r"Main\Set-up\test\statop\stat_op_moments_StaticOptimization_controls.xml")
+    set = osim.ControlSet(r"Main\Set-up\test\stat_op_moments_StaticOptimization_controls.xml")
     # Initialise j to 0 and loop over all coordinates
     j = 0
     for coordinate in model.getCoordinateSet():
