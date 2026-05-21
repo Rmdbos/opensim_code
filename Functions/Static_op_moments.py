@@ -16,5 +16,5 @@ def do_stat_op(file,file_name):
 
     statop = osim.AnalyzeTool(file)
     statop.setCoordinatesFileName("Stationary_kinematics"'\\' + file_name)
-    statop.setExternalLoadsFileName("Forward_dynamics\model_forces.xml")
+    # statop.setExternalLoadsFileName("Forward_dynamics\model_forces.xml")
     statop.run()

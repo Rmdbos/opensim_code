@@ -13,7 +13,7 @@
 				<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
 			</FrameGeometry>
 		</Ground>
-		<gravity>0 0 0</gravity>
+		<gravity>5 0 0</gravity>
 		<!--List of bodies that make up this model.-->
 		<BodySet name="bodyset">
 			<objects>

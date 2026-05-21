@@ -88,13 +88,13 @@ for ac in activation:
 for i in range(len(activations)):
     print(activations[i])
 
-H_1,test  = ma.calc_H_test(model,state)
-F_1 = np.matmul(H_1,activations)
-## T_1 = np.matmul(H_2,activations)
-tester = np.matmul(test,activations)
+# H_1,test  = ma.calc_H_test(model,state)
+# F_1 = np.matmul(H_1,activations)
+# ## T_1 = np.matmul(H_2,activations)
+# tester = np.matmul(test,activations)
 
-print(F_1)
-print(tester)
+# print(F_1)
+# print(tester)
 # print(T_1)
 
 # # body_interest = model.get_BodySet().get("hand")

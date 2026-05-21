@@ -11,7 +11,7 @@
   <!--Directory used for writing results.--> 
   <results_directory></results_directory> 
 
-  <force_set_files>actuators_1.xml</force_set_files>
+  <force_set_files>actuators_2.xml</force_set_files>
 
   <!--Output precision. It is 8 by default.--> 
   <output_precision> 20 </output_precision> 

@@ -4,11 +4,11 @@
 			<ExternalForce name="right">
 				<isDisabled> false </isDisabled>
 				
-				<applied_to_body>arm2</applied_to_body>
+				<applied_to_body>arm</applied_to_body>
 				
 				<force_expressed_in_body> ground </force_expressed_in_body>
 				
-				<point_expressed_in_body>arm2</point_expressed_in_body>
+				<point_expressed_in_body>arm</point_expressed_in_body>
 				
 				<force_identifier> force_v </force_identifier>
 				

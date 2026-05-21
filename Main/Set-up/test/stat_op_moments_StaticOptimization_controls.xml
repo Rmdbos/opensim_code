@@ -12,11 +12,33 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0</t>
-						<value>-2.4999999884014339</value>
+						<value>-2.499999988401445</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.01</t>
-						<value>-2.4999999884014339</value>
+						<value>-2.499999988401445</value>
+					</ControlLinearNode>
+				</x_nodes>
+				<min_nodes />
+				<max_nodes />
+				<kp>100</kp>
+				<kv>20</kv>
+			</ControlLinear>
+			<ControlLinear name="rot_coord_1_reserve">
+				<is_model_control>true</is_model_control>
+				<extrapolate>true</extrapolate>
+				<default_min>0.02</default_min>
+				<default_max>1</default_max>
+				<filter_on>false</filter_on>
+				<use_steps>false</use_steps>
+				<x_nodes>
+					<ControlLinearNode>
+						<t>0</t>
+						<value>2.4999999884014317</value>
+					</ControlLinearNode>
+					<ControlLinearNode>
+						<t>0.01</t>
+						<value>2.4999999884014317</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />
