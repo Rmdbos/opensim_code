@@ -2,226 +2,6 @@
 <OpenSimDocument Version="40500">
 	<ControlSet name="Control Set">
 		<objects>
-			<ControlLinear name="sternoclavicular_r2_reserve">
-				<is_model_control>true</is_model_control>
-				<extrapolate>true</extrapolate>
-				<default_min>0.02</default_min>
-				<default_max>1</default_max>
-				<filter_on>false</filter_on>
-				<use_steps>false</use_steps>
-				<x_nodes>
-					<ControlLinearNode>
-						<t>0</t>
-						<value>-0.045466696233793978</value>
-					</ControlLinearNode>
-					<ControlLinearNode>
-						<t>0.01</t>
-						<value>-0.045466696233762649</value>
-					</ControlLinearNode>
-				</x_nodes>
-				<min_nodes />
-				<max_nodes />
-				<kp>100</kp>
-				<kv>20</kv>
-			</ControlLinear>
-			<ControlLinear name="sternoclavicular_r3_reserve">
-				<is_model_control>true</is_model_control>
-				<extrapolate>true</extrapolate>
-				<default_min>0.02</default_min>
-				<default_max>1</default_max>
-				<filter_on>false</filter_on>
-				<use_steps>false</use_steps>
-				<x_nodes>
-					<ControlLinearNode>
-						<t>0</t>
-						<value>0.019257546613494058</value>
-					</ControlLinearNode>
-					<ControlLinearNode>
-						<t>0.01</t>
-						<value>0.019257546613480791</value>
-					</ControlLinearNode>
-				</x_nodes>
-				<min_nodes />
-				<max_nodes />
-				<kp>100</kp>
-				<kv>20</kv>
-			</ControlLinear>
-			<ControlLinear name="unrotscap_r3_reserve">
-				<is_model_control>true</is_model_control>
-				<extrapolate>true</extrapolate>
-				<default_min>0.02</default_min>
-				<default_max>1</default_max>
-				<filter_on>false</filter_on>
-				<use_steps>false</use_steps>
-				<x_nodes>
-					<ControlLinearNode>
-						<t>0</t>
-						<value>-0.019257546613488382</value>
-					</ControlLinearNode>
-					<ControlLinearNode>
-						<t>0.01</t>
-						<value>-0.019257546613475118</value>
-					</ControlLinearNode>
-				</x_nodes>
-				<min_nodes />
-				<max_nodes />
-				<kp>100</kp>
-				<kv>20</kv>
-			</ControlLinear>
-			<ControlLinear name="unrotscap_r2_reserve">
-				<is_model_control>true</is_model_control>
-				<extrapolate>true</extrapolate>
-				<default_min>0.02</default_min>
-				<default_max>1</default_max>
-				<filter_on>false</filter_on>
-				<use_steps>false</use_steps>
-				<x_nodes>
-					<ControlLinearNode>
-						<t>0</t>
-						<value>0.045466696233767361</value>
-					</ControlLinearNode>
-					<ControlLinearNode>
-						<t>0.01</t>
-						<value>0.045466696233736052</value>
-					</ControlLinearNode>
-				</x_nodes>
-				<min_nodes />
-				<max_nodes />
-				<kp>100</kp>
-				<kv>20</kv>
-			</ControlLinear>
-			<ControlLinear name="acromioclavicular_r2_reserve">
-				<is_model_control>true</is_model_control>
-				<extrapolate>true</extrapolate>
-				<default_min>0.02</default_min>
-				<default_max>1</default_max>
-				<filter_on>false</filter_on>
-				<use_steps>false</use_steps>
-				<x_nodes>
-					<ControlLinearNode>
-						<t>0</t>
-						<value>-0.0092060811236005305</value>
-					</ControlLinearNode>
-					<ControlLinearNode>
-						<t>0.01</t>
-						<value>-0.0092060811235941901</value>
-					</ControlLinearNode>
-				</x_nodes>
-				<min_nodes />
-				<max_nodes />
-				<kp>100</kp>
-				<kv>20</kv>
-			</ControlLinear>
-			<ControlLinear name="acromioclavicular_r3_reserve">
-				<is_model_control>true</is_model_control>
-				<extrapolate>true</extrapolate>
-				<default_min>0.02</default_min>
-				<default_max>1</default_max>
-				<filter_on>false</filter_on>
-				<use_steps>false</use_steps>
-				<x_nodes>
-					<ControlLinearNode>
-						<t>0</t>
-						<value>0.074400309344016827</value>
-					</ControlLinearNode>
-					<ControlLinearNode>
-						<t>0.01</t>
-						<value>0.074400309343965618</value>
-					</ControlLinearNode>
-				</x_nodes>
-				<min_nodes />
-				<max_nodes />
-				<kp>100</kp>
-				<kv>20</kv>
-			</ControlLinear>
-			<ControlLinear name="acromioclavicular_r1_reserve">
-				<is_model_control>true</is_model_control>
-				<extrapolate>true</extrapolate>
-				<default_min>0.02</default_min>
-				<default_max>1</default_max>
-				<filter_on>false</filter_on>
-				<use_steps>false</use_steps>
-				<x_nodes>
-					<ControlLinearNode>
-						<t>0</t>
-						<value>0.033442427011083506</value>
-					</ControlLinearNode>
-					<ControlLinearNode>
-						<t>0.01</t>
-						<value>0.033442427011060469</value>
-					</ControlLinearNode>
-				</x_nodes>
-				<min_nodes />
-				<max_nodes />
-				<kp>100</kp>
-				<kv>20</kv>
-			</ControlLinear>
-			<ControlLinear name="unrothum_r1_reserve">
-				<is_model_control>true</is_model_control>
-				<extrapolate>true</extrapolate>
-				<default_min>0.02</default_min>
-				<default_max>1</default_max>
-				<filter_on>false</filter_on>
-				<use_steps>false</use_steps>
-				<x_nodes>
-					<ControlLinearNode>
-						<t>0</t>
-						<value>-0.033442427011096218</value>
-					</ControlLinearNode>
-					<ControlLinearNode>
-						<t>0.01</t>
-						<value>-0.033442427011073181</value>
-					</ControlLinearNode>
-				</x_nodes>
-				<min_nodes />
-				<max_nodes />
-				<kp>100</kp>
-				<kv>20</kv>
-			</ControlLinear>
-			<ControlLinear name="unrothum_r3_reserve">
-				<is_model_control>true</is_model_control>
-				<extrapolate>true</extrapolate>
-				<default_min>0.02</default_min>
-				<default_max>1</default_max>
-				<filter_on>false</filter_on>
-				<use_steps>false</use_steps>
-				<x_nodes>
-					<ControlLinearNode>
-						<t>0</t>
-						<value>-0.074400309344014079</value>
-					</ControlLinearNode>
-					<ControlLinearNode>
-						<t>0.01</t>
-						<value>-0.074400309343962814</value>
-					</ControlLinearNode>
-				</x_nodes>
-				<min_nodes />
-				<max_nodes />
-				<kp>100</kp>
-				<kv>20</kv>
-			</ControlLinear>
-			<ControlLinear name="unrothum_r2_reserve">
-				<is_model_control>true</is_model_control>
-				<extrapolate>true</extrapolate>
-				<default_min>0.02</default_min>
-				<default_max>1</default_max>
-				<filter_on>false</filter_on>
-				<use_steps>false</use_steps>
-				<x_nodes>
-					<ControlLinearNode>
-						<t>0</t>
-						<value>0.0092060811235869355</value>
-					</ControlLinearNode>
-					<ControlLinearNode>
-						<t>0.01</t>
-						<value>0.0092060811235805968</value>
-					</ControlLinearNode>
-				</x_nodes>
-				<min_nodes />
-				<max_nodes />
-				<kp>100</kp>
-				<kv>20</kv>
-			</ControlLinear>
 			<ControlLinear name="elv_angle_reserve">
 				<is_model_control>true</is_model_control>
 				<extrapolate>true</extrapolate>
@@ -232,11 +12,11 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0</t>
-						<value>0.082737206046498216</value>
+						<value>0.16547441209191568</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.01</t>
-						<value>0.082737206046738676</value>
+						<value>0.1654744120923973</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />
@@ -254,33 +34,11 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0</t>
-						<value>0.18787848896002643</value>
+						<value>0.28556532371508164</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.01</t>
-						<value>0.18787848895989703</value>
-					</ControlLinearNode>
-				</x_nodes>
-				<min_nodes />
-				<max_nodes />
-				<kp>100</kp>
-				<kv>20</kv>
-			</ControlLinear>
-			<ControlLinear name="shoulder1_r2_reserve">
-				<is_model_control>true</is_model_control>
-				<extrapolate>true</extrapolate>
-				<default_min>0.02</default_min>
-				<default_max>1</default_max>
-				<filter_on>false</filter_on>
-				<use_steps>false</use_steps>
-				<x_nodes>
-					<ControlLinearNode>
-						<t>0</t>
-						<value>-0.082737206046498299</value>
-					</ControlLinearNode>
-					<ControlLinearNode>
-						<t>0.01</t>
-						<value>-0.082737206046738773</value>
+						<value>0.28556532371488558</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />
@@ -298,11 +56,11 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0</t>
-						<value>-0.16349595417054641</value>
+						<value>-0.16349595417060375</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.01</t>
-						<value>-0.16349595417053644</value>
+						<value>-0.1634959541705949</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />
@@ -320,11 +78,11 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0</t>
-						<value>0.2867924903603824</value>
+						<value>0.28679249036036331</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.01</t>
-						<value>0.28679249036032428</value>
+						<value>0.28679249036030557</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />
@@ -342,11 +100,11 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0</t>
-						<value>-0.012941699622978635</value>
+						<value>-0.012941699622980573</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.01</t>
-						<value>-0.01294169962297686</value>
+						<value>-0.012941699622978857</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />
@@ -364,11 +122,11 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0</t>
-						<value>-0.0087719909626525327</value>
+						<value>-0.024928514620430279</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.01</t>
-						<value>-0.0087719909626505742</value>
+						<value>-0.024928514620424568</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />
@@ -386,55 +144,11 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0</t>
-						<value>-0.0085684605621065921</value>
+						<value>-0.010710575709234678</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.01</t>
-						<value>-0.0085684605620711014</value>
-					</ControlLinearNode>
-				</x_nodes>
-				<min_nodes />
-				<max_nodes />
-				<kp>100</kp>
-				<kv>20</kv>
-			</ControlLinear>
-			<ControlLinear name="wrist_hand_r1_reserve">
-				<is_model_control>true</is_model_control>
-				<extrapolate>true</extrapolate>
-				<default_min>0.02</default_min>
-				<default_max>1</default_max>
-				<filter_on>false</filter_on>
-				<use_steps>false</use_steps>
-				<x_nodes>
-					<ControlLinearNode>
-						<t>0</t>
-						<value>-0.011904825887230056</value>
-					</ControlLinearNode>
-					<ControlLinearNode>
-						<t>0.01</t>
-						<value>-0.01190482588722723</value>
-					</ControlLinearNode>
-				</x_nodes>
-				<min_nodes />
-				<max_nodes />
-				<kp>100</kp>
-				<kv>20</kv>
-			</ControlLinear>
-			<ControlLinear name="wrist_hand_r3_reserve">
-				<is_model_control>true</is_model_control>
-				<extrapolate>true</extrapolate>
-				<default_min>0.02</default_min>
-				<default_max>1</default_max>
-				<filter_on>false</filter_on>
-				<use_steps>false</use_steps>
-				<x_nodes>
-					<ControlLinearNode>
-						<t>0</t>
-						<value>-0.0042842302942476306</value>
-					</ControlLinearNode>
-					<ControlLinearNode>
-						<t>0.01</t>
-						<value>-0.004284230294318259</value>
+						<value>-0.01071057570923469</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />

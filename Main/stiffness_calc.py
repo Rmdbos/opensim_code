@@ -54,12 +54,14 @@ position_file.find_related_coor()
 file_name = position_file.stat_kine_file_H()
 
 
-
+# Create a static optimisation with the actuators at the joints
 st.do_stat_op("Main\Set-up\Moblarms\Stat_op\stat_op_setup.xml",file_name)
 
-
+# Find the activations using the static optimisation with tendon compliance
 activation = so.loop_fibre_length(model,state)
 
+
+# # Make initial position file needed to check work in forward simulation
 # stateStore = osim.Storage()
 # sessionname = model.getName()
 # columnlabels = osim.ArrayStr()
@@ -81,19 +83,24 @@ activation = so.loop_fibre_length(model,state)
 
 # stateStore.printToXML(r"Main\Set-up\Moblarms\Initial_position\test.sto")
 
+
+
+# Store activations and add a one at the beginning of the array representing passive effects
 activations = [1]
 for ac in activation:
     activations.append(ac.value)
 
 
-
+# Calculate H matrix
 H_1 = ma.calc_H_Mobl(model,state)
+
+# Multiply H matrix with activations to find end point forces
 F_1 = np.matmul(H_1,activations)
-# T_1 = np.matmul(H_2,activations)
+
 
 
 print(F_1)
-# print(T_1)
+
 
 # body_interest = model.get_BodySet().get("hand")
 # point_1 = body_interest.getPositionInGround(state)

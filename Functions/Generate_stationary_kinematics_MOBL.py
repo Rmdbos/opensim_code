@@ -53,9 +53,9 @@ class stat_kine_file:
         self.el_flex_angle = np.where(self.el_flex_angle < 0, 0, self.el_flex_angle)
         self.elbow_flexion = self.el_flex_angle/180*np.pi
 
-
+    # Function that uses the independent coordinates and calculates the values of the dependent coordinates based on those
     def find_related_coor(self):
-        # Set related values using simmspline
+        # Set related values using simmspline that is the same as the one in the model
         sternoclav_r2_con = osim.SimmSpline()
         sternoclav_r2_con.addPoint(0,0)
         sternoclav_r2_con.addPoint(2.61799,-0.633555)

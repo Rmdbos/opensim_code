@@ -42,12 +42,9 @@ def find_activations(model,state):
     for coordinate in model.getCoordinateSet():
         # Get the moment on the coordinate
         name = coordinate.getName()
+        # Check only for independent coordinates
         if name == "elv_angle" or name == "shoulder_elv" or name == "shoulder_rot" or name == "elbow_flexion" or name == "pro_sup" or name == "deviation" or name == "flexion":
-        #     tableTime = osim.TimeSeriesTable(r'Main\Set-up\Moblarms\inverse_dynamics\Force_0.sto')
-        #     try:
-        #         moment = tableTime.getDependentColumn(name + "_moment")[0]
-        #     except RuntimeError:
-        #         moment = tableTime.getDependentColumn(name + "_force")[0]
+        
             control = set.get(name + "_reserve")
             
             moment = control.getControlValue() * 10
@@ -73,6 +70,7 @@ def find_activations(model,state):
                 i += 1
             # Add new constrain that equalises the moment found using ID to the moments in the muscle
             constraint.append(moment == moment_musc)
+        # Just a random else so it skips dependent coordinates
         else:
             p = 0
         # Add one to j
@@ -147,26 +145,7 @@ def loop_fibre_length(model,state):
     return(activation)
 
 
-# stateStore = osim.Storage()
-# sessionname = model.getName()
-# columnlabels = osim.ArrayStr()
-# statenames = model.getStateVariableNames()
 
-# columnlabels.append("time")
-
-# for i in range(statenames.getSize()):
-#     columnlabels.append(statenames.getitem(i))
-
-# stateStore.setColumnLabels(columnlabels)
-# stateStore.setName(sessionname)
-    
-# Statevalues = model.getStateVariableValues(state)
-# vector = osim.StateVector()
-# vector.setStates(state.getTime(),Statevalues)
-# stateStore.append(vector)
-
-
-# stateStore.printToXML(r"Main\Set-up\Moblarms\Initial_position\test.sto")
 
 
 

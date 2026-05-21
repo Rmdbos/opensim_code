@@ -12,15 +12,14 @@ import xml.etree.ElementTree as ET
 # body_of_interest: name of the body that the force is applied to. Type: string
 # model_name: name of the model the force is applied to. Used to generate the filename. Type: string
 class force_setup_file:
-    def __init__(self, direction, magnitude, force_file_name, setup_path, body_of_interest, model_name, directionT, magnitudeT):
+    def __init__(self, direction, magnitude, force_file_name, setup_path, body_of_interest, model_name):
             self.direction = direction
             self.magnitude = magnitude
             self.file_name = force_file_name
             self.setup_path = setup_path
             self.body_of_interest = body_of_interest
             self.model_name = model_name
-            self.directionT = directionT
-            self.magnitudeT = magnitudeT
+            
 
 
 
@@ -42,15 +41,12 @@ class force_setup_file:
         force_pz = np.zeros(len(time))
 
 
-        directionT = self.directionT/(np.sqrt(self.directionT[0]**2+self.directionT[1]**2+self.directionT[2]**2))
-        torque_x = np.heaviside(time,1) * self.magnitudeT * directionT[0]
-        torque_y = np.heaviside(time,1) * self.magnitudeT * directionT[1]
-        torque_z = np.heaviside(time,1) * self.magnitudeT * directionT[2]
+   
 
         # # Give torque in all directions as zero
-        # torque_x = np.zeros(len(time))
-        # torque_y = np.zeros(len(time))
-        # torque_z = np.zeros(len(time))
+        torque_x = np.zeros(len(time))
+        torque_y = np.zeros(len(time))
+        torque_z = np.zeros(len(time))
 
         # Open and store template file
         template = open(self.setup_path + r"\templates\Force_file_template.mot",'r')
