@@ -12,11 +12,11 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0</t>
-						<value>0.16813081164486343</value>
+						<value>0.0013281997754307361</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.01</t>
-						<value>0.16813081164534485</value>
+						<value>0.0013281997759119228</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />
@@ -34,11 +34,11 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0</t>
-						<value>0.28232562311317044</value>
+						<value>-0.0016198503006677847</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.01</t>
-						<value>0.28232562311297438</value>
+						<value>-0.0016198503008638813</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />
@@ -56,11 +56,11 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0</t>
-						<value>-0.16274983214190397</value>
+						<value>0.00037306101430915266</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.01</t>
-						<value>-0.16274983214189501</value>
+						<value>0.00037306101431799324</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />
@@ -78,11 +78,11 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0</t>
-						<value>0.28731123336554132</value>
+						<value>0.00025937150267687034</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.01</t>
-						<value>0.28731123336548314</value>
+						<value>0.00025937150261884156</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />
@@ -100,11 +100,11 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0</t>
-						<value>-0.01292361128574945</value>
+						<value>9.0441686117424442e-06</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.01</t>
-						<value>-0.01292361128574772</value>
+						<value>9.0441686134636084e-06</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />
@@ -122,11 +122,11 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0</t>
-						<value>-0.024943081050228137</value>
+						<value>-7.2832149079861377e-06</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.01</t>
-						<value>-0.02494308105022237</value>
+						<value>-7.2832149022369584e-06</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />
@@ -144,11 +144,11 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0</t>
-						<value>-0.010696301371002907</value>
+						<value>7.1371691129198928e-06</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.01</t>
-						<value>-0.010696301371002909</value>
+						<value>7.137169112904354e-06</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />

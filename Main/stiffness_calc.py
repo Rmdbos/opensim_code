@@ -55,7 +55,7 @@ file_name = position_file.stat_kine_file_H()
 
 
 # Create a static optimisation with the actuators at the joints
-st.do_stat_op("Main\Set-up\Moblarms\Stat_op\stat_op_setup.xml",file_name)
+st.do_stat_op("Main\Set-up\Moblarms\stat_op_setup.xml",file_name)
 
 # Find the activations using the static optimisation with tendon compliance
 activation = so.loop_fibre_length(model,state)
@@ -92,14 +92,15 @@ for ac in activation:
 
 
 # Calculate H matrix
-H_1 = ma.calc_H_Mobl(model,state)
+H_1,test = ma.calc_H_Mobl(model,state)
 
 # Multiply H matrix with activations to find end point forces
 F_1 = np.matmul(H_1,activations)
-
+tester = np.matmul(test,activations)
 
 
 print(F_1)
+print(tester)
 
 
 # body_interest = model.get_BodySet().get("hand")

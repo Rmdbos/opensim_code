@@ -7,5 +7,5 @@ This file contains static optimization results.
 
 endheader
 time	elv_angle_reserve	shoulder_elv_reserve	shoulder_rot_reserve	elbow_flexion_reserve	pro_sup_reserve	deviation_reserve	flexion_reserve
-      0.00000000	      0.16945901	      0.28070577	     -0.16237677	      0.28757060	     -0.01291457	     -0.02495036	     -0.01068916
-      0.01000000	      0.16945901	      0.28070577	     -0.16237677	      0.28757060	     -0.01291457	     -0.02495036	     -0.01068916
+      0.00000000	      0.00265640	     -0.00323970	      0.00074612	      0.00051874	      0.00001809	     -0.00001457	      0.00001427
+      0.01000000	      0.00265640	     -0.00323970	      0.00074612	      0.00051874	      0.00001809	     -0.00001457	      0.00001427

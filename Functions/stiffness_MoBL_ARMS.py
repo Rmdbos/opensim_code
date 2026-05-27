@@ -210,8 +210,9 @@ def calc_H_Mobl(model,state):
     # Calculate H by multiplying J, M, and Fmax
     H = np.matmul(J_inv,np.matmul(M,Fmax))
     # H = np.matmul(M,Fmax)
+    test = np.matmul(M,Fmax)
     
     # Return H
-    return H
+    return H, test
 
 

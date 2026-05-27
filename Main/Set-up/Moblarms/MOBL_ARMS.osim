@@ -62,7 +62,7 @@
 			</WrapObjectSet>
 		</Ground>
 		<!--Acceleration due to gravity, expressed in ground.-->
-		<gravity>0 -9.8066499999999994 0</gravity>
+		<gravity>0 0 0</gravity>
 		<!--Credits (e.g., model author names) associated with the model.-->
 		<credits>Katherine R. Saul, Wendy M. Murray, Craig M. Goehler, Melissa Daly, Meghan E. Vidt, Dustin L. Crouch</credits>
 		<!--Publications and references associated with the model.-->
