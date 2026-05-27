@@ -350,23 +350,7 @@
 		<!--Constraints in the model.-->
 		<ConstraintSet name="constraintset">
 			<objects>
-				<CoordinateCouplerConstraint name="pin2con">
-					<!--Flag indicating whether the constraint is enforced or not.Enforced means that the constraint is active in subsequent dynamics realizations. NOTE: Prior to OpenSim 4.0, this behavior was controlled by the 'isDisabled' property, where 'true' meant the constraint was not being enforced. Thus, if 'isDisabled' is'true', then 'isEnforced' is false.-->
-					<isEnforced>true</isEnforced>
-					<!--Constraint function of generalized coordinates (to be specified) used to evaluate the constraint errors and their derivatives, and must valid to at least 2nd order. Constraint function must evaluate to zero when coordinates satisfy the constraint.-->
-					<coupled_coordinates_function>
-						<SimmSpline>
-							<x> 0 1</x>
-							<y> 0 -1</y>
-						</SimmSpline>
-					</coupled_coordinates_function>
-					<!--List of names of the right hand side (independent) coordinates. Note the constraint function above, must be able to handle multiple coordinate values if more than one coordinate name is provided.-->
-					<independent_coordinate_names>rot_coord_0</independent_coordinate_names>
-					<!--Name of the left-hand side (dependent) coordinate of the constraint coupling function.-->
-					<dependent_coordinate_name>rot_coord_1</dependent_coordinate_name>
-					<!--Scale factor for the coupling function.-->
-					<scale_factor>1</scale_factor>
-				</CoordinateCouplerConstraint>
+				
 			</objects>
 			<groups />
 		</ConstraintSet>

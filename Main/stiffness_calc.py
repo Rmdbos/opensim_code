@@ -16,14 +16,14 @@ import Generate_force_files as fs
 import Generate_stationary_kinematics_MOBL as sk
 import sta_op_tendon_comp as so
 import Static_op_moments as st
-import testing_H_copy2 as ma
+import stiffness_MoBL_ARMS_copy2 as ma
 np.set_printoptions(threshold=sys.maxsize)
 
 
 
 
 # Initialise model and state and set coordinate angle
-model = osim.Model(r"Main\Set-up\test\test_simple_dependent.osim")
+model = osim.Model(r"Main\Set-up\Moblarms\MOBL_ARMS.osim")
 
 state = model.initSystem()
 
@@ -33,22 +33,22 @@ state = model.initSystem()
 
 # Calculate coordinate angles in both radians and degrees
   
-# elv_angle_deg = round(state.getY()[10]*180/np.pi,1)
-# shoulder_elv_deg = round(state.getY()[11]*180/np.pi,1)
-# shoulder_rot_deg = round(state.getY()[13]*180/np.pi,1)
-# elbow_flexion_deg = round(state.getY()[14]*180/np.pi,1)
-# elv_angle_rad = state.getY()[10]
-# shoulder_elv_rad = state.getY()[11]
-# shoulder_rot_rad = state.getY()[13]
-# elbow_flexion_rad = state.getY()[14]
+elv_angle_deg = round(state.getY()[10]*180/np.pi,1)
+shoulder_elv_deg = round(state.getY()[11]*180/np.pi,1)
+shoulder_rot_deg = round(state.getY()[13]*180/np.pi,1)
+elbow_flexion_deg = round(state.getY()[14]*180/np.pi,1)
+elv_angle_rad = state.getY()[10]
+shoulder_elv_rad = state.getY()[11]
+shoulder_rot_rad = state.getY()[13]
+elbow_flexion_rad = state.getY()[14]
   
 
-# # Create object using the create static kinematics file class, given angles for the joints and a path to the setup directory
-# position_file = sk.stat_kine_file(r'Main\Set-up\Moblarms', 0,0,0,elv_angle_rad,shoulder_rot_rad,shoulder_elv_rad,elbow_flexion_rad)
+# Create object using the create static kinematics file class, given angles for the joints and a path to the setup directory
+position_file = sk.stat_kine_file(r'Main\Set-up\Moblarms', 0,0,0,elv_angle_rad,shoulder_rot_rad,shoulder_elv_rad,elbow_flexion_rad)
 
     
-# # Find the related coordinates of the Mobl_arms model
-# position_file.find_related_coor()
+# Find the related coordinates of the Mobl_arms model
+position_file.find_related_coor()
 
 # Write the initial position and stationary kinematics file
 file_name = r"test_static_kinematics_ID_angle_0.mot"
@@ -88,13 +88,13 @@ for ac in activation:
 for i in range(len(activations)):
     print(activations[i])
 
-# H_1,test  = ma.calc_H_test(model,state)
-# F_1 = np.matmul(H_1,activations)
+H_1,test  = ma.calc_H_test(model,state)
+F_1 = np.matmul(H_1,activations)
 # ## T_1 = np.matmul(H_2,activations)
-# tester = np.matmul(test,activations)
+tester = np.matmul(test,activations)
 
-# print(F_1)
-# print(tester)
+print(F_1)
+print(tester)
 # print(T_1)
 
 # # body_interest = model.get_BodySet().get("hand")
