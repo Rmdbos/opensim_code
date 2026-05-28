@@ -84,29 +84,38 @@ def calc_H_Mobl(model,state,activations):
     
 
     Mderiv = np.zeros((num_coord,num_coord,int(num_musc)))
+    k = 0
     for coordinatei in model.getCoordinateSet():
         i = 0
         coordangle = coordinatei.getValue(state)
-        Mpm = np.zeros((3,num_coord,int(num_musc)))
+        print(coordangle)
+        
         for coordinatej in model.getCoordinateSet():
             # Initialise j to 0 and loop over all muscles
             j = 0
             for muscle in model.getMuscles():
                 # Calculate muscle moment arm relative to coordinate
                 path = muscle.getGeometryPath()
-                Mpm[0] = M
+                Mpm = np.zeros((3,2))
+                Mpm[0,0] = coordinatej.getValue(state)
+                arm = solver.solve(state,coordinatej,path)
+                Mpm[0,1] = arm
                 for p in range(2):
                     angle = coordangle+((-1**p)*0.01)
+                    print(angle)
                     coordinatei.setValue(state,angle)
                     arm = solver.solve(state,coordinatej,path)
+                    Mpm[p+1,0] = coordinatej.getValue(state)
+                    Mpm[p+1,1] = arm
                 
-                    Mpm[p+1,i,j] = arm
+                print(Mpm)
         
                 # Add one to both i and j
                 coordinatei.setValue(state,coordangle)
                 j += 1
             i += 1
-        print(Mpm)
+        k += 1
+        
 
    
     Mt = np.transpose(M)

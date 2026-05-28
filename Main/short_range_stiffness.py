@@ -55,7 +55,7 @@ file_name = position_file.stat_kine_file_H()
 
 
 # Create a static optimisation with the actuators at the joints
-st.do_stat_op("Main\Set-up\Moblarms\Stat_op\stat_op_setup.xml",file_name)
+st.do_stat_op("Main\Set-up\Moblarms\stat_op_setup.xml",file_name)
 
 # Find the activations using the static optimisation with tendon compliance
 activation = so.loop_fibre_length(model,state)
