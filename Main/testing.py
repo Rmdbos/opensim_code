@@ -19,8 +19,8 @@ import Static_op_moments as st
 import stiffness_MoBL_ARMS_copy2 as ma
 np.set_printoptions(threshold=sys.maxsize)
 
-model = osim.Model(r"Main\Set-up\test\test_simple_dependent.osim")
-# model = osim.Model(r"Main\Set-up\Moblarms\MOBL_ARMS.osim")
+#model = osim.Model(r"Main\Set-up\test\test_simple_dependent.osim")
+model = osim.Model(r"Main\Set-up\Moblarms\MOBL_ARMS.osim")
 
 s = model.initSystem()
 ground = model.getGround()
@@ -36,29 +36,30 @@ ground = model.getGround()
 
 
 
-joint = model.getJointSet().get("pin2")
-body = model.getBodySet().get("arm2")
+# joint = model.getJointSet().get("pin2")
+# body = model.getBodySet().get("arm2")
 
 # for joint in model.getJointSet():
 #     print(joint)
 # joint = model.getJointSet().get("elbow")
 # print(joint)
-# print(osim.CustomJoint())
+#print(osim.CustomJoint())
 
 # print(model)
 # print(dir(model.getMultibodySystem()))
 
 
-# joint = model.getJointSet().get("wrist_hand")
-# body = model.getBodySet().get("hand")
+joint = model.getJointSet().get("wrist_hand")
+body = model.getBodySet().get("hand")
 
 # print(s.getZ())
 # print(s.getY())
 # print(s.getQ())
 # print(s.getU())
 
+print(joint)
 
-print(joint.getChildFrame().getRotationInGround(s).get(1))
+# print(joint.getChildFrame().getRotationInGround(s).get(1))
 
 # position1 = joint.getChildFrame().getPositionInGround(s)
 # position2 = joint.getParentFrame().getPositionInGround(s)

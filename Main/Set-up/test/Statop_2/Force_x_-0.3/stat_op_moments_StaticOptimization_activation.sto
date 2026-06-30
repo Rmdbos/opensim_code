@@ -1,11 +1,11 @@
 Static Optimization
 version=1
 nRows=2
-nColumns=2
+nColumns=3
 inDegrees=no
 This file contains static optimization results.
 
 endheader
-time	rot_coord_0_reserve
-      0.00000000000000000000	      0.02999999986081723288
-      0.01000000000000000021	      0.02999999986081722247
+time	rot_coord_0_reserve	rot_coord_1_reserve
+      0.00000000000000000000	     -2.48499998847103320543	      2.48499998847102565591
+      0.01000000000000000021	     -2.48499998847103320543	      2.48499998847102565591

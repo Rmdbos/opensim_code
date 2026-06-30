@@ -1,0 +1,18 @@
+center_of_mass
+version=1
+nRows=5
+nColumns=13
+inDegrees=no
+
+This file contains accelerations of coordinates or bodies.
+
+Units are S.I. units (seconds, meters, Newtons, ...)
+If the header above contains a line with 'inDegrees', this indicates whether rotational values are in degrees (yes) or radians (no).
+
+endheader
+time	total_X	total_Y	total_Z	rot_coord_0_reserve_X	rot_coord_0_reserve_Y	rot_coord_0_reserve_Z	gravity_X	gravity_Y	gravity_Z	velocity_X	velocity_Y	velocity_Z
+      0.00000000	      0.00000000	      0.00000000	      0.00000000	     -4.44444444	      0.00000000	      0.00000000	      4.44444444	      0.00000000	      0.00000000	      0.00000000	      0.00000000	      0.00000000
+      0.01000000	      0.00000000	      0.00000000	      0.00000000	     -4.44444444	     -0.00000000	     -0.00000000	      4.44444444	      0.00000000	      0.00000000	     -0.00000000	      0.00000000	      0.00000000
+      0.06000000	      0.00000000	      0.00000000	      0.00000000	     -4.44444444	     -0.00000000	     -0.00000000	      4.44444444	      0.00000000	      0.00000000	     -0.00000000	      0.00000000	      0.00000000
+      0.31000000	      0.00000000	      0.00000000	      0.00000000	     -4.44444444	     -0.00000000	     -0.00000000	      4.44444444	      0.00000000	      0.00000000	     -0.00000000	      0.00000000	      0.00000000
+      1.00000000	      0.00000000	      0.00000000	      0.00000000	     -4.44444444	     -0.00000000	     -0.00000000	      4.44444444	      0.00000000	      0.00000000	     -0.00000000	      0.00000000	      0.00000000

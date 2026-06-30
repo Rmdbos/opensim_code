@@ -95,7 +95,7 @@ def find_activations(model,state):
     prob = cp.Problem(objective, constraint)
 
     # # Solve the problem
-    result = prob.solve(warm_start = False,verbose = False)
+    result = prob.solve(warm_start = False,verbose = True)
 
     # Return the found activations
     return activation
