@@ -14,7 +14,7 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 import Generate_force_files as fs
 import Generate_stationary_kinematics_MOBL as sk
-import sta_op_tendon_comp as so
+import sta_op_tendon_comp2 as so
 import Static_op_moments as st
 import stiffness_MoBL_ARMS as ma
 np.set_printoptions(threshold=sys.maxsize)
@@ -55,10 +55,10 @@ file_name = position_file.stat_kine_file_H()
 
 
 # Create a static optimisation with the actuators at the joints
-st.do_stat_op("Main\Set-up\Moblarms\stat_op_setup.xml",file_name)
+# st.do_stat_op("Main\Set-up\Moblarms\stat_op_setup.xml",file_name)
 
 # Find the activations using the static optimisation with tendon compliance
-activation = so.loop_fibre_length(model,state)
+activation = so.loop_fibre_length(model,state,file_name)
 
 
 # # Make initial position file needed to check work in forward simulation
@@ -90,17 +90,19 @@ activations = [1]
 for ac in activation:
     activations.append(ac.value)
 
-
-# Calculate H matrix
-H_1,test = ma.calc_H_Mobl(model,state)
-
-# Multiply H matrix with activations to find end point forces
-F_1 = np.matmul(H_1,activations)
-tester = np.matmul(test,activations)
+print(activations)
 
 
-print(F_1)
-print(tester)
+# # Calculate H matrix
+# H_1,test = ma.calc_H_Mobl(model,state)
+
+# # Multiply H matrix with activations to find end point forces
+# F_1 = np.matmul(H_1,activations)
+# tester = np.matmul(test,activations)
+
+
+# print(F_1)
+# print(tester)
 
 
 # body_interest = model.get_BodySet().get("hand")
