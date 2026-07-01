@@ -56,11 +56,11 @@ state = model.initSystem()
 file_name = r"test_static_kinematics_ID_angle_0.mot"
 
 
+st.do_stat_op(model,file_name)
 
 
 
-
-activation = so.loop_fibre_length(model,state,file_name)
+activation = so.loop_fibre_length(model,state)
 
 # stateStore = osim.Storage()
 # sessionname = model.getName()

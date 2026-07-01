@@ -23,21 +23,12 @@ import cvxpy as cp
 # Function that gets the activations needed to maintain a certain position for the test model
 # model: the model for which to calculate the activations. Type: OpenSim model
 # state: state of the model for which the activations needs to be calculated. Type: OpenSim state
-def find_activations(model,state, file_name):
+def find_activations(model,state):
 
+    print(state.getY())
+    
 
-    ID = osim.InverseDynamicsTool()
-    ID.set_results_directory(r"Main\Set-up\test\inverse_dynamics")
-    ID.setCoordinatesFileName(r"Main\Set-up\test\Stationary_kinematics"'\\' + file_name)
-    ID.setModel(model)
-    muscles = osim.ArrayStr()
-    muscles.append('Muscles')
-    ID.setExcludedForces(muscles)
-    ID.setStartTime(0)
-    ID.setEndTime(0.01)
-    ID.setOutputGenForceFileName("Force_0.sto")
-    ID.run()
-
+    print(state.getY())
     # Initialise a solver that finds the muscle moment arms
     solverarm = osim.MomentArmSolver(model)
 
@@ -121,7 +112,7 @@ def find_activations(model,state, file_name):
 
 
 
-def loop_fibre_length(model,state,file_name):
+def loop_fibre_length(model,state):
     # Set all muscle activations to the same and equilibrate muscles
     for muscle in model.getMuscles():
         muscle.setActivation(state,1)
@@ -137,7 +128,7 @@ def loop_fibre_length(model,state,file_name):
         # Get number of muscles
         num_muscles = round(model.getNumMuscleStates()/2)
         # Use the optimiser to find the activations for current fiber lengths
-        activation = find_activations(model,state,file_name)
+        activation = find_activations(model,state)
         # Set i to 0 and loop over all muscles
         i = 0
         for muscle in model.getMuscles():
