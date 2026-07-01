@@ -23,7 +23,20 @@ import cvxpy as cp
 # Function that gets the activations needed to maintain a certain position for the test model
 # model: the model for which to calculate the activations. Type: OpenSim model
 # state: state of the model for which the activations needs to be calculated. Type: OpenSim state
-def find_activations(model,state):
+def find_activations(model,state, file_name):
+
+
+    ID = osim.InverseDynamicsTool()
+    ID.set_results_directory(r"Main\Set-up\test\inverse_dynamics")
+    ID.setCoordinatesFileName(r"Main\Set-up\test\Stationary_kinematics"'\\' + file_name)
+    ID.setModel(model)
+    muscles = osim.ArrayStr()
+    muscles.append('Muscles')
+    ID.setExcludedForces(muscles)
+    ID.setStartTime(0)
+    ID.setEndTime(0.01)
+    ID.setOutputGenForceFileName("Force_0.sto")
+    ID.run()
 
     # Initialise a solver that finds the muscle moment arms
     solverarm = osim.MomentArmSolver(model)
@@ -36,24 +49,23 @@ def find_activations(model,state):
 
     # Initialise empty contraint matrix
     constraint = []
-    set = osim.ControlSet(r"Main\Set-up\test\stat_op_moments_StaticOptimization_controls.xml")
+    tableTime = osim.TimeSeriesTable(r'Main\Set-up\test\inverse_dynamics\Force_0.sto')
     # Initialise j to 0 and loop over all coordinates
     j = 0
     for coordinate in model.getCoordinateSet():
         # Get the moment on the coordinate
         name = coordinate.getName()
         if name == "rot_coord_0":
-        #     tableTime = osim.TimeSeriesTable(r'Main\Set-up\Moblarms\inverse_dynamics\Force_0.sto')
+            
         #     try:
-        #         moment = tableTime.getDependentColumn(name + "_moment")[0]
+            moment = tableTime.getDependentColumn(name + "_moment")[0]
         #     except RuntimeError:
         #         moment = tableTime.getDependentColumn(name + "_force")[0]
-            control = set.get(name + "_reserve")
             
-            moment = control.getControlValue() * 10
             # Initialise i and the moment due to the muscle to 0 and loop over all muscles
             
             
+            print(state.getY())
             moment_musc = 0
             i = 0
             for muscle in model.getMuscles():
@@ -61,8 +73,10 @@ def find_activations(model,state):
                 cospen = muscle.getCosPennationAngle(state)
                 # Calculate maximum active fiber force at given fiber length
                 force_active = muscle.getActiveFiberForce(state)/muscle.getActivation(state)
+                print(force_active)
                 # Calculate passive fiber force at given length
                 force_passive = muscle.getPassiveFiberForce(state)
+                print(force_passive)
                 # Calculate muscle moment arm relative to coordinate
                 path = muscle.getGeometryPath()
                 arm = solverarm.solve(state,coordinate,path)
@@ -83,7 +97,7 @@ def find_activations(model,state):
     for i in range(len(activation)):
         constraint.append(activation[i] >= 0.02)
         constraint.append(activation[i] <= 1)
-
+    print(constraint[0])
 
     # Create objective function from squares off all activations summed
     objective = 0
@@ -107,10 +121,10 @@ def find_activations(model,state):
 
 
 
-def loop_fibre_length(model,state):
+def loop_fibre_length(model,state,file_name):
     # Set all muscle activations to the same and equilibrate muscles
     for muscle in model.getMuscles():
-        muscle.setActivation(state,0.5)
+        muscle.setActivation(state,1)
     model.equilibrateMuscles(state)
 
     # Initialise diff to 1 and j to 0
@@ -123,7 +137,7 @@ def loop_fibre_length(model,state):
         # Get number of muscles
         num_muscles = round(model.getNumMuscleStates()/2)
         # Use the optimiser to find the activations for current fiber lengths
-        activation = find_activations(model,state)
+        activation = find_activations(model,state,file_name)
         # Set i to 0 and loop over all muscles
         i = 0
         for muscle in model.getMuscles():

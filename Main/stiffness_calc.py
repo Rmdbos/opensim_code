@@ -23,9 +23,11 @@ np.set_printoptions(threshold=sys.maxsize)
 
 
 # Initialise model and state and set coordinate angle
-model = osim.Model(r"Main\Set-up\Moblarms\MOBL_ARMS.osim")
+model = osim.Model(r"Main\Set-up\test\test_simple_dependent.osim")
 
 state = model.initSystem()
+
+
 
 # Define state as wanted
 
@@ -33,53 +35,53 @@ state = model.initSystem()
 
 # Calculate coordinate angles in both radians and degrees
   
-elv_angle_deg = round(state.getY()[10]*180/np.pi,1)
-shoulder_elv_deg = round(state.getY()[11]*180/np.pi,1)
-shoulder_rot_deg = round(state.getY()[13]*180/np.pi,1)
-elbow_flexion_deg = round(state.getY()[14]*180/np.pi,1)
-elv_angle_rad = state.getY()[10]
-shoulder_elv_rad = state.getY()[11]
-shoulder_rot_rad = state.getY()[13]
-elbow_flexion_rad = state.getY()[14]
+# elv_angle_deg = round(state.getY()[10]*180/np.pi,1)
+# shoulder_elv_deg = round(state.getY()[11]*180/np.pi,1)
+# shoulder_rot_deg = round(state.getY()[13]*180/np.pi,1)
+# elbow_flexion_deg = round(state.getY()[14]*180/np.pi,1)
+# elv_angle_rad = state.getY()[10]
+# shoulder_elv_rad = state.getY()[11]
+# shoulder_rot_rad = state.getY()[13]
+# elbow_flexion_rad = state.getY()[14]
   
 
-# Create object using the create static kinematics file class, given angles for the joints and a path to the setup directory
-position_file = sk.stat_kine_file(r'Main\Set-up\Moblarms', 0,0,0,elv_angle_rad,shoulder_rot_rad,shoulder_elv_rad,elbow_flexion_rad)
+# # Create object using the create static kinematics file class, given angles for the joints and a path to the setup directory
+# position_file = sk.stat_kine_file(r'Main\Set-up\Moblarms', 0,0,0,elv_angle_rad,shoulder_rot_rad,shoulder_elv_rad,elbow_flexion_rad)
 
     
 # Find the related coordinates of the Mobl_arms model
-position_file.find_related_coor()
+# position_file.find_related_coor()
 
 # Write the initial position and stationary kinematics file
 file_name = r"test_static_kinematics_ID_angle_0.mot"
 
 
 
-st.do_stat_op(r"Main\Set-up\test\stat_op_setup2.xml",file_name)
 
 
-activation = so.loop_fibre_length(model,state)
 
-stateStore = osim.Storage()
-sessionname = model.getName()
-columnlabels = osim.ArrayStr()
-statenames = model.getStateVariableNames()
+activation = so.loop_fibre_length(model,state,file_name)
 
-columnlabels.append("time")
+# stateStore = osim.Storage()
+# sessionname = model.getName()
+# columnlabels = osim.ArrayStr()
+# statenames = model.getStateVariableNames()
 
-for i in range(statenames.getSize()):
-    columnlabels.append(statenames.getitem(i))
+# columnlabels.append("time")
 
-stateStore.setColumnLabels(columnlabels)
-stateStore.setName(sessionname)
+# for i in range(statenames.getSize()):
+#     columnlabels.append(statenames.getitem(i))
+
+# stateStore.setColumnLabels(columnlabels)
+# stateStore.setName(sessionname)
     
-Statevalues = model.getStateVariableValues(state)
-vector = osim.StateVector()
-vector.setStates(state.getTime(),Statevalues)
-stateStore.append(vector)
+# Statevalues = model.getStateVariableValues(state)
+# vector = osim.StateVector()
+# vector.setStates(state.getTime(),Statevalues)
+# stateStore.append(vector)
 
 
-stateStore.printToXML(r"Main\Set-up\test\Initial_position\test.sto")
+# stateStore.printToXML(r"Main\Set-up\test\Initial_position\test.sto")
 
 activations = [1]
 for ac in activation:
@@ -88,13 +90,13 @@ for ac in activation:
 for i in range(len(activations)):
     print(activations[i])
 
-H_1,test  = ma.calc_H_test(model,state)
-F_1 = np.matmul(H_1,activations)
-# ## T_1 = np.matmul(H_2,activations)
-tester = np.matmul(test,activations)
+# H_1,test  = ma.calc_H_test(model,state)
+# F_1 = np.matmul(H_1,activations)
+# # ## T_1 = np.matmul(H_2,activations)
+# tester = np.matmul(test,activations)
 
-print(F_1)
-print(tester)
+# print(F_1)
+# print(tester)
 # print(T_1)
 
 # # body_interest = model.get_BodySet().get("hand")
