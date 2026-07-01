@@ -52,7 +52,7 @@ def find_activations(model,state,file_name):
     constraint = []
     tableTime = osim.TimeSeriesTable(r'Main\Set-up\Moblarms\inverse_dynamics\Force_0.sto')
         
-    
+    print(state.getY())
     # Initialise j to 0 and loop over all coordinates
     j = 0
     for coordinate in model.getCoordinateSet():
@@ -73,12 +73,15 @@ def find_activations(model,state,file_name):
             moment_musc = 0
             i = 0
             for muscle in model.getMuscles():
+                print(muscle.getName())
                 # Calculate cosine of the penation angle
                 cospen = muscle.getCosPennationAngle(state)
                 # Calculate maximum active fiber force at given fiber length
                 force_active = muscle.getActiveFiberForce(state)/muscle.getActivation(state)
+                print(force_active)
                 # Calculate passive fiber force at given length
                 force_passive = muscle.getPassiveFiberForce(state)
+                print(force_passive)
                 # Calculate muscle moment arm relative to coordinate
                 path = muscle.getGeometryPath()
                 arm = solverarm.solve(state,coordinate,path)

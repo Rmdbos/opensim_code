@@ -15,20 +15,10 @@ def do_stat_op(file,file_name):
     # forcefile.generate_force_setup()
 
 
-    # # Load instructions for static optimisation tool from file
-    # statop = osim.AnalyzeTool(file)
-    # # Specify stationary kinematics file from which to use coordinates
-    # statop.setCoordinatesFileName("Stationary_kinematics"'\\' + file_name)
-    # # statop.setExternalLoadsFileName("Forward_dynamics\Right_forces.xml")
-    # statop.run()
-    ID = osim.InverseDynamicsTool()
-    ID.set_results_directory(r"Main\Set-up\Moblarms\inverse_dynamics")
-    ID.setCoordinatesFileName("Stationary_kinematics"'\\' + file_name)
-    ID.setModel(model)
-    muscles = osim.ArrayStr()
-    muscles.append('Muscles')
-    ID.setExcludedForces(muscles)
-    ID.setStartTime(0)
-    ID.setEndTime(0.01)
-    ID.setOutputGenForceFileName("Force_0.sto")
-    ID.run()
+    # Load instructions for static optimisation tool from file
+    statop = osim.AnalyzeTool(file)
+    # Specify stationary kinematics file from which to use coordinates
+    statop.setCoordinatesFileName("Stationary_kinematics"'\\' + file_name)
+    # statop.setExternalLoadsFileName("Forward_dynamics\Right_forces.xml")
+    statop.run()
+    
