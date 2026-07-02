@@ -25,7 +25,7 @@ def do_stat_op(model,file_name):
     ID.setModel(model)
     muscles = osim.ArrayStr()
     muscles.append('Muscles')
-    # ID.setExcludedForces(muscles)
+    #ID.setExcludedForces(muscles)
     ID.setStartTime(0)
     ID.setEndTime(0.01)
     ID.setOutputGenForceFileName("Force_0.sto")

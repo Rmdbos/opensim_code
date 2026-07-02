@@ -25,10 +25,7 @@ import cvxpy as cp
 # state: state of the model for which the activations needs to be calculated. Type: OpenSim state
 def find_activations(model,state):
 
-    print(state.getY())
     
-
-    print(state.getY())
     # Initialise a solver that finds the muscle moment arms
     solverarm = osim.MomentArmSolver(model)
 
@@ -115,7 +112,7 @@ def find_activations(model,state):
 def loop_fibre_length(model,state):
     # Set all muscle activations to the same and equilibrate muscles
     for muscle in model.getMuscles():
-        muscle.setActivation(state,1)
+        muscle.setActivation(state,0.5)
     model.equilibrateMuscles(state)
 
     # Initialise diff to 1 and j to 0
