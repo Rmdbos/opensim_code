@@ -23,21 +23,7 @@ import cvxpy as cp
 # Function that gets the activations needed to maintain a certain position for the test model
 # model: the model for which to calculate the activations. Type: OpenSim model
 # state: state of the model for which the activations needs to be calculated. Type: OpenSim state
-def find_activations(model,state,file_name):
-
-
-
-    ID = osim.InverseDynamicsTool()
-    ID.set_results_directory(r"Main\Set-up\Moblarms\inverse_dynamics")
-    ID.setCoordinatesFileName("Main\Set-up\Moblarms\Stationary_kinematics"'\\' + file_name)
-    ID.setModel(model)
-    muscles = osim.ArrayStr()
-    muscles.append('Muscles')
-    ID.setExcludedForces(muscles)
-    ID.setStartTime(0)
-    ID.setEndTime(0.01)
-    ID.setOutputGenForceFileName("Force_0.sto")
-    ID.run()
+def find_activations(model,state):
 
     # Initialise a solver that finds the muscle moment arms
     solverarm = osim.MomentArmSolver(model)
@@ -50,26 +36,21 @@ def find_activations(model,state,file_name):
 
     # Initialise empty contraint matrix
     constraint = []
-    tableTime = osim.TimeSeriesTable(r'Main\Set-up\Moblarms\inverse_dynamics\Force_0.sto')
-        
-    print(state.getY())
+    set = osim.ControlSet(r"Main\Set-up\Moblarms\Right_StaticOptimization_controls.xml")
     # Initialise j to 0 and loop over all coordinates
     j = 0
     for coordinate in model.getCoordinateSet():
         # Get the moment on the coordinate
         name = coordinate.getName()
         # Check only for independent coordinates
-        if name == "elbow_flexion":
-            try:
-                moment = tableTime.getDependentColumn(name + "_moment")[0]
-            except:
-                moment = tableTime.getDependentColumn(name + "_force")[0]
-            print(moment)
+        if name == "elv_angle" or name == "shoulder_elv" or name == "shoulder_rot" or name == "elbow_flexion" or name == "pro_sup" or name == "deviation" or name == "flexion":
+        
+            control = set.get(name + "_reserve")
             
-            
+            moment = control.getControlValue() * 10
             # Initialise i and the moment due to the muscle to 0 and loop over all muscles
             
-            
+            print(moment)
             moment_musc = 0
             i = 0
             for muscle in model.getMuscles():
@@ -114,7 +95,7 @@ def find_activations(model,state,file_name):
     prob = cp.Problem(objective, constraint)
 
     # # Solve the problem
-    result = prob.solve(warm_start = False,verbose = True)
+    result = prob.solve(warm_start = False,verbose = False)
 
     # Return the found activations
     return activation
@@ -126,7 +107,7 @@ def find_activations(model,state,file_name):
 
 
 
-def loop_fibre_length(model,state,file_name):
+def loop_fibre_length(model,state):
     # Set all muscle activations to the same and equilibrate muscles
     for muscle in model.getMuscles():
         muscle.setActivation(state,0.5)
@@ -142,7 +123,7 @@ def loop_fibre_length(model,state,file_name):
         # Get number of muscles
         num_muscles = round(model.getNumMuscleStates()/2)
         # Use the optimiser to find the activations for current fiber lengths
-        activation = find_activations(model,state,file_name)
+        activation = find_activations(model,state)
         # Set i to 0 and loop over all muscles
         i = 0
         for muscle in model.getMuscles():

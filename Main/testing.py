@@ -16,7 +16,7 @@ import Generate_force_files as fs
 import Generate_stationary_kinematics_MOBL as sk
 import sta_op_tendon_comp as so
 import Static_op_moments as st
-import stiffness_MoBL_ARMS_copy2 as ma
+import stiffness_MoBL_ARMS as ma
 np.set_printoptions(threshold=sys.maxsize)
 
 #model = osim.Model(r"Main\Set-up\test\test_simple_dependent.osim")
@@ -48,17 +48,23 @@ ground = model.getGround()
 # print(model)
 # print(dir(model.getMultibodySystem()))
 
+for coor  in model.getCoordinateSet():
+    name = coor.getName()
+    if name == "elv_angle":
+        s2 = s
+        print(coor.getValue(s2))
+        coor.setValue(s2,0)
+        print(coor.getValue(s2))
+# joint : osim.Joint = model.getJointSet().get("wrist_hand")
 
-joint : osim.Joint = model.getJointSet().get("wrist_hand")
-
-body = model.getBodySet().get("hand")
+# body = model.getBodySet().get("hand")
 
 # print(s.getZ())
 # print(s.getY())
 # print(s.getQ())
 # print(s.getU())
 
-print(joint)
+# print(joint)
 
 # print(joint.getChildFrame().getRotationInGround(s).get(1))
 
