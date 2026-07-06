@@ -194,15 +194,14 @@ def calc_H_test(model,state):
 
     # Take the pseudoinverse of J
     J_inv = np.linalg.pinv(J)
-    print(J)
-    print(J_inv)
+    
     # Calculate H by multiplying J, M, and Fmax
     H = np.matmul(J_inv,np.matmul(M,Fmax))
     test = np.matmul(M,Fmax)
-
+    
     model.setGravity(gravity)
     # Return H
-    return H, test
+    return H
 
 # # Calculate H for position 1
 # H1 = calc_H_test(model,s)
