@@ -35,10 +35,10 @@ class force_setup_file:
         force_vy = np.heaviside(time,1) * self.magnitude * direction[1]
         force_vz = np.heaviside(time,1) * self.magnitude * direction[2]
 
-        # Give force application point as body center
-        force_px = np.zeros(len(time))
-        force_py = np.zeros(len(time))
-        force_pz = np.zeros(len(time))
+        # Give force application point as body center of mass
+        force_px = np.ones(len(time))*-0.0030131400000000001
+        force_py = np.ones(len(time))*-0.042499299999999997
+        force_pz = np.ones(len(time))*-0.0011220500000000001
 
 
    
