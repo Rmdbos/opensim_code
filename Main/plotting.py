@@ -98,97 +98,101 @@ x_data = stiffness[:,0]
 y_data = stiffness[:,1]
 z_data = stiffness[:,2]
 
-def ellipsoid(x, y, z, alpha, beta, gamma, a, b, c):
-    Rx = np.array([[1, 0, 0],[0 , np.cos(alpha), -np.sin(alpha)],[0, np.sin(alpha), np.cos(alpha)]]) 
-    Ry = np.array([[np.cos(beta), 0, np.sin(beta)],[0, 1, 0],[-np.sin(beta), 0, np.cos(beta)]])
-    Rz = np.array([[np.cos(gamma), -np.sin(gamma), 0],[np.sin(gamma) , np.cos(gamma),0],[0, 0, 1]])
-    xyz = np.array([x,y,z])
-    xyz1 = np.matmul(Rz,np.matmul(Ry,np.matmul(Rx,xyz)))
-    x1 = xyz1[0]
-    y1 = xyz1[1]
-    z1 = xyz1[2]
-    f = (x1 / a) ** 2 + (y1 / b) ** 2 + (z1 / c) **2 - 1
-    return f
-
-
-def f_min(params, x, y, z):
-    alpha, beta, gamma , a, b, c = params
-    return np.sum(ellipsoid(x, y, z, alpha, beta, gamma, a, b, c)**2)
-
-
-# Initial guess
-p0 = [0, 0 , 0, 200, 500, 300]
-
-# Optimize
-res=scipy.optimize.minimize(f_min, p0, args=(x_data, y_data, z_data))
-
-print(res)
-
-
-a = res.x[3]
-b = res.x[4]
-c = res.x[5]  # Semi-axes (adjust these for different ellipsoids)
-num_samples = 100  # Number of points per angle (θ and φ)
 
 
 
-theta = np.linspace(0, np.pi, num_samples)  # Polar angle: 0 to π
-phi = np.linspace(0, 2 * np.pi, num_samples)  # Azimuthal angle: 0 to 2π
+
+# def ellipsoid(x, y, z, alpha, beta, gamma, a, b, c):
+#     Rx = np.array([[1, 0, 0],[0 , np.cos(alpha), -np.sin(alpha)],[0, np.sin(alpha), np.cos(alpha)]]) 
+#     Ry = np.array([[np.cos(beta), 0, np.sin(beta)],[0, 1, 0],[-np.sin(beta), 0, np.cos(beta)]])
+#     Rz = np.array([[np.cos(gamma), -np.sin(gamma), 0],[np.sin(gamma) , np.cos(gamma),0],[0, 0, 1]])
+#     xyz = np.array([x,y,z])
+#     xyz1 = np.matmul(Rz,np.matmul(Ry,np.matmul(Rx,xyz)))
+#     x1 = xyz1[0]
+#     y1 = xyz1[1]
+#     z1 = xyz1[2]
+#     f = (x1 / a) ** 2 + (y1 / b) ** 2 + (z1 / c) **2 - 1
+#     return f
+
+
+# def f_min(params, x, y, z):
+#     alpha, beta, gamma , a, b, c = params
+#     return np.sum(ellipsoid(x, y, z, alpha, beta, gamma, a, b, c)**2)
+
+
+# # Initial guess
+# p0 = [0, 0 , 0, 200, 500, 300]
+
+# # Optimize
+# res=scipy.optimize.minimize(f_min, p0, args=(x_data, y_data, z_data))
+
+# print(res)
+
+
+# a = res.x[3]
+# b = res.x[4]
+# c = res.x[5]  # Semi-axes (adjust these for different ellipsoids)
+# num_samples = 100  # Number of points per angle (θ and φ)
+
+
+
+# theta = np.linspace(0, np.pi, num_samples)  # Polar angle: 0 to π
+# phi = np.linspace(0, 2 * np.pi, num_samples)  # Azimuthal angle: 0 to 2π
  
-# Create meshgrid: θ_grid[i,j] = θ[j], φ_grid[i,j] = φ[i]
-theta_grid, phi_grid = np.meshgrid(theta, phi)
+# # Create meshgrid: θ_grid[i,j] = θ[j], φ_grid[i,j] = φ[i]
+# theta_grid, phi_grid = np.meshgrid(theta, phi)
 
 
-x = a * np.sin(theta_grid) * np.cos(phi_grid)
-y = b * np.sin(theta_grid) * np.sin(phi_grid)
-z = c * np.cos(theta_grid)
+# x = a * np.sin(theta_grid) * np.cos(phi_grid)
+# y = b * np.sin(theta_grid) * np.sin(phi_grid)
+# z = c * np.cos(theta_grid)
 
 
-alpha = res.x[0]
-beta = res.x[1]
-gamma = res.x[2]
+# alpha = res.x[0]
+# beta = res.x[1]
+# gamma = res.x[2]
 
-Rx = np.array([[1, 0, 0],[0 , np.cos(alpha), -np.sin(alpha)],[0, np.sin(alpha), np.cos(alpha)]]) 
-Ry = np.array([[np.cos(beta), 0, np.sin(beta)],[0, 1, 0],[-np.sin(beta), 0, np.cos(beta)]])
-Rz = np.array([[np.cos(gamma), -np.sin(gamma), 0],[np.sin(gamma) , np.cos(gamma),0],[0, 0, 1]])
+# Rx = np.array([[1, 0, 0],[0 , np.cos(alpha), -np.sin(alpha)],[0, np.sin(alpha), np.cos(alpha)]]) 
+# Ry = np.array([[np.cos(beta), 0, np.sin(beta)],[0, 1, 0],[-np.sin(beta), 0, np.cos(beta)]])
+# Rz = np.array([[np.cos(gamma), -np.sin(gamma), 0],[np.sin(gamma) , np.cos(gamma),0],[0, 0, 1]])
 
 
 
-x1 = x
-y1 = y*np.cos(alpha)-z*np.sin(alpha)
-z1 = y*np.sin(alpha)+z*np.cos(alpha)
+# x1 = x
+# y1 = y*np.cos(alpha)-z*np.sin(alpha)
+# z1 = y*np.sin(alpha)+z*np.cos(alpha)
 
-x2 = x1*np.cos(beta) + z1*np.sin(beta)
-y2 = y1
-z2 = x1*-np.sin(beta)+z1*np.cos(beta)
+# x2 = x1*np.cos(beta) + z1*np.sin(beta)
+# y2 = y1
+# z2 = x1*-np.sin(beta)+z1*np.cos(beta)
 
-x3 = x2*np.cos(gamma)-y2*np.sin(gamma)
-y3 = x2*np.sin(gamma) + y2*np.cos(gamma)
-z3 = z2
+# x3 = x2*np.cos(gamma)-y2*np.sin(gamma)
+# y3 = x2*np.sin(gamma) + y2*np.cos(gamma)
+# z3 = z2
 
  
-# Plot the ellipsoid surface
-ellipsoid = ax.plot_wireframe(
-    x3, y3, z3,
-    cmap='viridis',  # Color map
-    alpha=0.8,       # Transparency
-    edgecolor='k',   # Edge color for wireframe
-    linewidth=0.2    # Edge line width
-)
+# # Plot the ellipsoid surface
+# ellipsoid = ax.plot_wireframe(
+#     x3, y3, z3,
+#     cmap='viridis',  # Color map
+#     alpha=0.8,       # Transparency
+#     edgecolor='k',   # Edge color for wireframe
+#     linewidth=0.2    # Edge line width
+# )
  
-# # Add labels and title
-ax.set_xlabel('X-axis', fontsize=12)
-ax.set_ylabel('Y-axis', fontsize=12)
-ax.set_zlabel('Z-axis', fontsize=12)
-ax.set_title(f'Ellipsoid with Semi-axes (a={a}, b={b}, c={c})', fontsize=14)
+# # # Add labels and title
+# ax.set_xlabel('X-axis', fontsize=12)
+# ax.set_ylabel('Y-axis', fontsize=12)
+# ax.set_zlabel('Z-axis', fontsize=12)
+# ax.set_title(f'Ellipsoid with Semi-axes (a={a}, b={b}, c={c})', fontsize=14)
  
-# Add color bar (optional)
-cbar = fig.colorbar(ellipsoid, ax=ax, shrink=0.7, aspect=10)
-cbar.set_label('Z-Value', rotation=270, labelpad=15)
+# # Add color bar (optional)
+# cbar = fig.colorbar(ellipsoid, ax=ax, shrink=0.7, aspect=10)
+# cbar.set_label('Z-Value', rotation=270, labelpad=15)
  
-# Adjust view angle for better visibility
-ax.view_init(elev=30, azim=45)  # Elevation and azimuth angles
+# # Adjust view angle for better visibility
+# ax.view_init(elev=30, azim=45)  # Elevation and azimuth angles
  
-plt.tight_layout()
-plt.show()
+# plt.tight_layout()
+# plt.show()
 

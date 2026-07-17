@@ -117,6 +117,7 @@ stiffness = np.zeros((30,3))
 state = model.initSystem()
 deflections = np.zeros((30,3))
 magnitude = np.zeros(30)
+forces = np.zeros((30,3))
 
 j = 0
 for coor in model.getCoordinateSet():
@@ -160,6 +161,7 @@ for coor in model.getCoordinateSet():
             deflections[j] = defl
             stiffness[j] = stiff*stiffdir
             magnitude[j] = deflmag
+            forces[j] = delF/delFmag
             j += 1
             
 
@@ -210,6 +212,7 @@ for i in range(2):
     deflections[8+i] = defl
     stiffness[8+i] = stiff*stiffdir
     magnitude[8+i] = deflmag
+    forces[8+i] = delF/delFmag
 
 
 
@@ -250,6 +253,7 @@ for i in range(2):
     deflections[10+i] = defl
     stiffness[10+i] = stiff*stiffdir
     magnitude[10+i] = deflmag
+    forces[10+i] = delF/delFmag
 
 
 
@@ -290,6 +294,7 @@ for i in range(2):
     deflections[12+i] = defl
     stiffness[12+i] = stiff*stiffdir
     magnitude[12+i] = deflmag
+    forces[12+i] = delF/delFmag
 
 
 
@@ -330,6 +335,7 @@ for i in range(2):
     deflections[14+i] = defl
     stiffness[14+i] = stiff*stiffdir
     magnitude[14+i] = deflmag
+    forces[14+i] = delF/delFmag
 
 
 
@@ -371,6 +377,7 @@ for i in range(2):
     deflections[16+i] = defl
     stiffness[16+i] = stiff*stiffdir
     magnitude[16+i] = deflmag
+    forces[16+i] = delF/delFmag
 
 
 for i in range(2):
@@ -412,6 +419,7 @@ for i in range(2):
     deflections[18+i] = defl
     stiffness[18+i] = stiff*stiffdir
     magnitude[18+i] = deflmag
+    forces[18+i] = delF/delFmag
 
 
 
@@ -456,6 +464,7 @@ for i in range(2):
     deflections[20+i] = defl
     stiffness[20+i] = stiff*stiffdir
     magnitude[20+i] = deflmag
+    forces[20+i] = delF/delFmag
 
 
 for i in range(2):
@@ -497,6 +506,7 @@ for i in range(2):
     deflections[22+i] = defl
     stiffness[22+i] = stiff*stiffdir
     magnitude[22+i] = deflmag
+    forces[22+i] = delF/delFmag
 
 
 
@@ -539,6 +549,7 @@ for i in range(2):
     deflections[24+i] = defl
     stiffness[24+i] = stiff*stiffdir
     magnitude[24+i] = deflmag
+    forces[24+i] = delF/delFmag
 
 
 for i in range(2):
@@ -580,6 +591,7 @@ for i in range(2):
     deflections[26+i] = defl
     stiffness[26+i] = stiff*stiffdir
     magnitude[26+i] = deflmag
+    forces[26+i] = delF/delFmag
 
 
 for i in range(2):
@@ -624,12 +636,14 @@ for i in range(2):
     deflections[28+i] = defl
     stiffness[28+i] = stiff*stiffdir
     magnitude[28+i] = deflmag
+    forces[28+i] = delF/delFmag
 
 
 
 
 
-print(stiffness)
+# print(stiffness)
 print(deflections)
-print(magnitude)
+print(forces)
+# print(magnitude)
 
